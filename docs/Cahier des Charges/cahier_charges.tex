@@ -1,0 +1,336 @@
+\documentclass[a4paper]{article}
+\usepackage[francais]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+\pagestyle{fancy} 
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyfoot[R]{\includegraphics [width=4cm]{logo.jpg}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Cahier des charges\\[0.4cm] }
+		\HRule \\[2cm]
+
+
+		\large \textsc{Brenet} Timothée\\
+		\textsc{Lafargue} Victor\\
+		\textsc{Lariau} Steven\\
+		\textsc{Sequeira} Idris
+
+		\includegraphics[scale=0.6]{logo2.png}
+
+	\end{center}
+\end{titlepage}
+
+\newpage
+
+\renewcommand{\contentsname}{Sommaire}
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Nous allons vous présenter notre projet, intitulé Dawn of Gates. Derrière ce nom peu évocateur se cache une équipe soudée et un projet ambitieux. Nous sommes tous enthousiastes et impatients à l'idée de le réaliser, d'apprendre de nouvelles connaissances, et de nous surpasser afin d'avoir un rendu final à la hauteur de nos espérances.\\
+
+Dans ce cahier des charges nous présenterons l'ensemble de notre travail effectué en amont du développement du jeu et nous essayerons tant bien que mal de détailler au maximum les moyens, logiciels et choix techniques pour parvenir au meilleur résultat.
+Nous expliquerons en détail les principes généraux du jeu : gameplay, scénario... Enfin seront aussi précisés les rôles de chaque membre du groupe sur chaque période.\\
+
+Nous avons choisi de nous lancer dans la création d'un jeu en réalité virtuelle. Ceci à l'aide du casque Oculus Rift, un bijou de technologie encore en phase de développement, qui donne des résultats très prometteurs. Contrairement aux jeux-vidéos sur le marché, l'Oculus permet une immersion totale dans le jeu. Il présente l'avantage de profiter d'une vue à la première personne à 360degres. C'est-à-dire que nous percevons l'environnement qui nous entoure sous tous les angles avec une impression 3D saisissante. Nous aimons les perspectives d'un tel outil et c'est pourquoi nous tenons à travailler dessus.\\
+
+Faisant de Portal notre source d'inspiration, nous avons décidé de garder le concept de portails tridimensionnel qui servent à se déplacer entre deux points instantanément. Une infinité de possibilités sont à explorer avec ces portails qui nous ouvrent un champ d'action quasi-infini. Nous pensons déjà à l'utilisation des portails pour résoudre certaines énigmes ainsi que venir à bout d'ennemis coriaces. Tout ceci dans des pièces adaptées à notre gameplay.\\
+L'Oculus sublimera le rendu grâce à l'époustouflante immersion dans la peau du personnage qu'il permet.\\
+
+Un style graphique Toon nous semble être une excellente idée pour affirmer au maximum l'identité visuelle de notre jeu. . Nous choisirons un gameplay profitant au maximum des capacités de l'Oculus Rift.\\
+
+Notre héros est un ninja, n'hésitant pas à risquer sa vie afin de poursuivre le voleur ayant détroussé sa petite amie d'un objet très précieux.\\
+Allant de salles en salles, il doit déjouer les pièges et résoudre les énigmes d'un étrange bâtiment, tout en affrontant des hordes d'ennemies déchaînées. Pour venir à bout de sa quête il peut compter sur ses shurikens, qui peuvent aussi bien tuer que ouvrir des portails. Ils lui permettent de se déplacer plus vite mais aussi d'affronter les nombreux dangers jalonnant sa route. Il est aussi capable de ralentir le temps afin d'esquiver tout types de projectiles.
+
+\newpage
+
+\section{Naissance du projet}
+
+\subsection{L'idée du projet}
+
+A l'origine, nous nous sommes tous mis d'accord sur un point : nous développerons un jeu-vidéo. Inspirés du fameux jeu Portal, il nous est venu l'idée de créer un concept de jeu innovant autour des portes de téléportation mais sur un concept fondamentalement différent à celui de Portal bien sûr. D'où le nom Dawn Of Gates.
+
+\subsection{Nature du projet}
+
+Il s'agira donc d'un jeu mêlant action et aventure dans un univers futuriste dont la majeure partie reste encore à développer même si nous avons nombreuses idées.\\
+Notre jeu aura un style graphique toon (dessin animé) avec des graphismes simples mais esthétiquement bien conçus. Nous porterons une attention toute particulière à la qualité du rendu graphique. Il sera probable que nous tentions de programmer des shaders pour améliorer la dynamique et l'esthétique du jeu. Notre but étant d'essayer d'atteindre les niveaux de professionnalisme de certains jeu sur le marché.\\
+L'originalité de notre projet se joue dans l'aperçu visuel mais aussi dans la rédaction de son scénario écrit avec soin et n'omettant pas de donner une touche d'humour au jeu.\\
+
+Le personnage principal, celui du joueur sera un ninja. Il aura la capacité de lancer des shurikens (petites armes que l'on lance) sur les murs. Ces shurikens une fois arrivés sur le mur se transformeront en porte de téléportation. Les portes de téléportation rempliront un rôle majeur dans le jeu. Le joueur aura aussi la possibilité de ralentir le temps dans certaines occasions en appuyant sur une touche. Ceci donnera alors au jeu une toute nouvelle dimension où le joueur devra éviter des attaques et tirer sur des ennemis dans un cours laps de temps. Ces quelques éléments forment le concept principal du jeu.
+
+\subsection{Présentation des membres}
+
+\subsubsection{Timothée Brenet}
+
+Passionné d'informatique depuis la quatrième, j'ai appris la programmation grâce au site du zero. J'ai d'abord suivi les cours sur le C puis je me suis tourné vers les langages web comme l'html, php, javascript et drupal. Je me suis finalement majoritairement concentré sur le développement en Java.J'ai participé à quelques projets en groupe de programmation en Java, la plupart centrés sur la creation d'un jeu en 2D grâce a la librairie lwjgl. Ce projet de sup, m'intéresse donc énormément et je pense qu'il va me permettre de me faire progresser en C\# notamment et de créer mon premier jeux 3D avec Unity. Je suis donc très motivée pour ce projet, je travaillerais surtout sur la programmation en C\# et le portage sur l'Oculus Rift.
+
+\subsubsection{Victor Lafargue}
+
+Je m'appelle Victor Lafargue, je suis originaire de Seine-Et-Marne près de Fontainebleau. J'ai toujours été fasciné par la technologie, l'électronique et l'informatique. Ce sont les domaines d'expertises d'Epita et c'est pourquoi j'ai choisi cette école. J'ai déjà un peu d'expérience en informatique surtout en C\# et en python que je connaissais avant de venir ici. J'ai aussi déjà essayé de créer le début d'un jeu-vidéo avec OpenGL ce qui pourra peut-être aider. Ce projet informatique en équipe et sur le long terme est une superbe occasion d'avoir un  avant-gout de ce qu'est le développement informatique. Il me permettra, j'en suis sûr d'énormément progresser de démontrer ma détermination à réussir et à terminer un grand projet.
+
+\subsubsection{Steven Lariau}
+
+Ce projet sera sans aucun doute une grande aventure, vouloir réaliser un jeu en réalité virtuelle, c'est un choix ambitieux, mais qui me permettra de découvrir de nouveaux domaines de la programmation. Bien que je connaisse déjà un peu le développement web, notamment javascript avec node, mais aussi la programmation en Java, C\#, C++, tout ce qui relève de la 3D et de l'IA par exemple sont des notions que j'ai hate de découvrir afin de réaliser ce projet.
+Etant un expert dans l'art de "commencer des projets colossaux, d'y passer des journées entières dessus en partant dans tous les sens puis d'arrêter complètement", j'espère ainsi apprendre à mener un véritable projet à son terme, à travailler en équipe, et à faire face aux différents problèmes sans se décourager.
+
+\subsubsection{Idris Sequeira}
+
+Me lançant dans un projet avec trois amis, j'ai plusieurs appréhensions. Avant d'entrer à l'EPITA je n'avais jamais réellement programme, si l'on excepte un forum guide par un tutoriel et quelques antisèches sur ma calculatrice. Sur de ce fait j'ai peur de devenir à force un poids lourd pour l'équipe au vue de mon faible niveau en programmation, mais j'ai envie de réussir et d'apporter à l'équipe, à l'aide d'autres qualités. Je vois ce projet comme une chance de m'améliorer en programmation, d'apprendre dans pleins d'autres domaines et de m'amuser dans sa mise en oeuvre. 
+
+\section{Courte présentation du projet}
+
+Notre projet s'est tourné vers l'utilisation dans son gameplay de l'oculus rift, un casque de réalité virtuelle, car nous pensons que la réalité virtuelle va surement jouer un important rôle dans l'avenir aussi bien dans les jeux-videos que dans l'industrie en général. Diverses applications sont déjà prévus tel que dans l'architecture pour la visualisation de modèles 3D plus vrai que nature aux envisageables clients/acheteurs. Le jeu que nous souhaitons réaliser s'appelle donc D.O.G ou Dawn Of Gates, mélange entre une reprise de matrix et une reprise du célèbre jeu Portal.\\
+
+\newpage
+
+Celui-ci raconte l'histoire d'un ninja se servant de ses incroyables capacités afin de récupérer l'object précieux volé à sa petit amie. Il peut entre autres créer des portail de teleportation, ralentir le temps et bien d'autre. Le joueur évoluera de niveaux en niveaux , de salles en salles, en déjouant tous les pièges lui étant présentés. Notre jeu melange donc un jeu de réflexion avec l'utilisation cordonnée et ingénieuse des portails de téléportation et un jeu d'action avec des combats contre les ennemis présents dans les différents niveaux. Le tout sera implémenté avec L'Oculus Rift.\\
+
+\begin{center}
+	\includegraphics[scale=0.5]{ninjas.jpeg}
+\end{center}
+
+\newpage
+
+\section{But et intérêts du projet}
+
+Le but de ce projet est d'aboutir à un jeu réellement jouable au gameplay attractif et original. Nous souhaiterions qu'arrivé à la date d'échéance le jeu soit assez aboutit pour être commercialisable.\\
+L'intérêt de ce projet au-delà du jeu en lui-même est d'apprendre et de gagner en expérience. Nous perfectionnerons ainsi notre maîtrise du langage C\#, nous apprendrons à maîtriser Unity, MonoDevelop, Visual Studio, Blender... Grâce à ce projet nous acquerrons aussi une expérience de travail en équipe et d'entraide.
+
+\section{Structure du projet}
+
+Le projet sera développé avec Unity et le langage C\#.
+
+\subsection{Interface}
+
+
+La création d'une interface est un élément important au sein de tout projet informatique. Dans le nôtre elle nous servira à accéder aux différentes fonctions du jeu. Elle sera conçue de manière esthétique et optimisée pour une utilisation aisée et rapide par l'utilisateur.\\
+Notre interface contiendra un menu principal composé des boutons suivants :
+
+\begin{itemize}
+	\item Jouer : amenant à l'écran de sélection de partie, solo ou multijoueur
+	\item Option : permettant de paramétrer différents réglages
+	\item Crédits : les noms des auteurs
+	\item Quitter : pour fermer le jeu
+\end{itemize}
+
+Il y aura aussi une interface  de gameplay  qui permettra d'apercevoir différentes informations :
+
+\begin{itemize}
+	\item Un niveau de vie affiché de manière esthétique, la perte de vie sera accompagnée de shaders rendant l'écran rouge
+	\item Un niveau de capacité à ralentir le temps
+	\item Une carte radar pour se repérer par rapport au milieu et aux alliés/ennemis
+	\item Une indication de l'arme courante, du nombre de munitions
+	\item Une interface de chat pour le mode multijoueur
+	\item Une interface de gameplay
+\end{itemize}
+
+\subsection{L'environnement}
+
+Cette partie déterminera la beauté de notre rendu visuel. Nous avons choisis d'élaborer nos développements sur style graphique toon. Nous sommes partis sur cette idée pour tous les avantages que cela apporte, que ce soit en terme de netteté de graphismes mais aussi améliorer l'affichage des modèles 3D en particulier les personnages.\\
+
+\newpage
+
+Ceci étant dit, penchons-nous sur ce qu'apportera l'environnement en matière de gameplay. Contrairement au courant actuel qui plébiscite les mondes dits « Open World » (jeux à monde ouvert), nous avons choisis de faire preuve d'originalité en revenant sur quelque chose de plus classique, c'est-à-dire des environnements clos, des pièces. Elles s'agenceront de sorte que leur parcourt fera avancer la progression de l'histoire. On peut les comparer à des niveaux. Ce choix de monde clos ne veut pas dire pour autant que nous ferons face à de petits environnements, car bien que certaines pièces soient petites, il existera des niveaux comportant des pièces plus grandes, nombreuses et complexes. Le joueur pourra ainsi y laisser libre court à son imagination pour les parcourir à l'aide de ses portails.\\
+
+Le but de ces pièces est de pouvoir exploiter au maximum le potentiel de gameplay qu'offrent les portails, ce qui ne serait évidemment pas possible dans un monde ouvert. Les portails étant la base du gameplay, nous ne pouvons nous permettre de la mettre de côté, notre but étant de les exploiter au maximum.\\
+
+Par le biais du scénario et du contexte fantastique, le thème des pièces pourra aussi bien être identique d'une à l'autre que complétement différent. Pour autant, nous nous assurerons qu'aucune ne dénote vraiment avec les autres.  Nous nous efforcerons de garder une identité visuelle ainsi qu'un cachet propre à Dawn Of Gates.\\
+
+Pour coller avec le gameplay, les pièces seront construite de sorte a avoir un level design adapté a l'utilisation des portails et des armes. Pour ne pas avoir une impression de suffoquer avec l'Oculus, nous veillerons aussi a être aussi clair que possible et net dans la disposition des pièces ainsi que dans leur agencement.
+
+\subsection{Les ennemis}
+
+Les ennemis joueront un rôle essentiel dans tout le jeu, du début a la fin. Un principalement tient le fil conducteur du scénario. C'est le grand méchant, le boss final comme on peut aussi l'appeler, l'intelligence artificielle doit être savamment dosé pour donner un challenge au joueur sans pour autant le dégoûter comme le feraient certains Die And Retry. La réalisation des ennemis ne doit pas être bâclés quel que soit leur importance. Ils représentent l'identité du jeu au même titre que l'environnement.\\ 
+
+Nous avons pour objectif de créer des sortes d'ennemies différents et variés pour ne pas donner une impression de déjà vu au joueur, pour autant nous gardons a l'esprit que bien que tous différent, les ennemis doivent appartenir à la même entité graphique.\\
+
+C'est un challenge de réaliser des ennemis crédibles et terrifiants, ils doivent à juste titre être développées parallèlement au héros pour avoir quelques similitudes avec lui, notamment le boss final qui se révèle souvent être l'alter ego du protagoniste. C'est pour entrer en partie dans ses codes que nous nous limiterons à des ennemis humanoïdes et robots en laissant de côté tout les trolls, Aliens et toute autre créature fantastique. La création des ennemis n'attend que nous, et nous sommes impatient de nous attaquer à cette tâche.
+
+\subsection{Intelligence artificielle}
+
+Au cours de notre jeu, le joueur devra affronter un certain nombres d'ennemis qu'ils soient humains ou robotiques. Ceux-ci seront dépendants d'une intelligence artificielle que nous réaliserons. Pour ce faire les ennemis humains disposeront de différentes armes, selon leurs types d'armes il attaqueront différemment. Ceux disposant de shuriken tenteront d'esquiver les attaques du joueur basé sur les vecteur trajectoires des projectiles et esquiveront avec succès ou non. Les ennemis avec des armes faisant plus de dégâts directs se déplacent plus lentement. Eux ne tenteront pas d'esquiver les coups mais plutôt d'infliger des dégâts important aux joueurs en peu de temps. Les ennemis humains ont un champ de vue assez limité et n'attaqueront pas avant que le joueur s'approche significativement, contrairement aux robots, qui disposeront d'un champ de vision plus large. Si le joueur entre dans ce rayon d'action le robot passe en mode d'attaque et vise le joueur très précisément (mieux que les humains) mais est moins agile. Nous utiliserons principalement les raycast pour la détection du joueur par les humains, et plutôt des "box collider" prédéfinis pour les robots.
+
+\subsection{Le scénario}
+
+Au début, dans l'introduction du jeu, notre héros se promène avec sa petite amie dans la rue. C'est alors qu'un homme mystérieux lui arrache son splendide collier. Celui-ci est poursuivi  par notre héros qui se trouve être un ninja. Il le poursuit jusque dans un immeuble assez étrange , où il se fait enfermer. Prisonnier, il décide de déjouer tous les pièges pour trouver la salle où se cache le mystérieux voleur. Sur son chemin il découvre des armes dotées de pouvoir fantastiques qui lui permettent d'ouvrir des portails et d'accroitre des sens. Si le joueur parvient au bout des différents niveaux, il devra affronter le Boss final et récupérera (peut-être) le collier.\\
+Le héros est donc plongé dans un univers semi-fantastique où il se découvre des talents cachés. Il défie des ennemis surentrainés et des robots tueurs, tout en faisant preuve d'ingéniosité pour parvenir à son but final.
+
+\subsection{Audio}
+
+Nous devons dans un premier temps trouver des fichiers audio libres de droits pour les musiques et les bruitages.\\
+Ensuite il faudra créer les scripts nécessaires à leur lecture pour les jouer au bon moment, afin de permettre au joueur de s'immerger encore plus dans le jeu.
+
+\subsection{Multijoueur}
+
+Un mode multijoueur permet d'améliorer considérablement la durée d'un jeu en faisant découvrir aux joueurs des approches différentes. Plusieurs joueurs collaborent ou s'affronteront dans un environnement identique à celui du mode solo, mais néanmoins le gameplay en sera différent, étant donné qu'il sera possible d'emprunter les portails créés par les autres joueurs, et la possibilité de ralentir le temps devra être utilisé à bon escient, afin d'éviter qu'elle ne retourne contre nous.\\
+L'expérience de jeu multijoueur et d'autant plus forte grâce à l'immersion en réalité virtuelle permise par l'Oculus Rift.
+
+\subsection{Site web}
+
+Le site web nous permet tout d'abord de présenter notre jeu, de donner envie d'y jouer, ainsi que de présenter les nouveautés. Bien que Github tienne aussi ce rôle, un site web est plus adapté pour les utilisateurs lambda.\\
+Il permet aussi aux joueurs de communiquer entre eux par le bais du forum.\\
+Enfin, notre jeu se servira du serveur afin de stocker les performances des joueurs, ainsi, il y aura des classements pour chaque niveau, pouvant être consultés en jeu et sur le site.
+
+\section{Déroulement du développement}
+
+\subsection{Répartition du travail}
+
+\subsubsection{Première période}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Timothée & Steven & Victor & Idris  & Total\\
+\hline
+Code (Base) & 20 & 15 & 15 & 10 & 60\\
+\hline
+Graphismes & 0 & 0 & 30 & 10 & 40\\
+\hline
+Animations & 10 & 0 & 30 & 0 & 40\\
+\hline
+Niveaux & 6 & 6 & 2 & 6& 20\\
+\hline
+IA & 15 & 20 & 5 & 0 & 40\\
+\hline
+Audio & 0 & 0 & 0 & 0 & 0\\
+\hline
+Site web & 0 & 35 & 0 & 15 & 50\\
+\hline
+Réseau & 0 & 0 & 0 & 0 & 0\\
+\hline
+\end{tabular}
+
+\subsubsection{Deuxième période}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Timothée & Steven & Victor & Idris  & Total\\
+\hline
+Code (Base) & 25 & 20 & 20 & 15 & 80\\
+\hline
+Graphismes & 0 & 0 & 50 & 20 & 70\\
+\hline
+Animations & 20 & 0 & 40 & 0 & 60\\
+\hline
+Niveaux & 25 & 25 & 5 & 25 & 80\\
+\hline
+IA & 25 & 30 & 15 & 0 & 70\\
+\hline
+Audio & 15 & 0 & 0 & 35 & 50\\
+\hline
+Site web & 0 & 55 & 0 & 25 & 80\\
+\hline
+Réseau & 0 & 10 & 10 & 0 & 20\\
+\hline
+\end{tabular}
+
+\subsubsection{Troisième période}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Timothée & Steven & Victor & Idris  & Total\\
+\hline
+Code (Base) & 30 & 25 & 25 & 20 & 100\\
+\hline
+Graphismes & 0 & 0 & 70 & 30 & 100\\
+\hline
+Animations & 40 & 0 & 60 & 0 & 100\\
+\hline
+Niveaux & 30 & 30 & 10 & 30 & 100\\
+\hline
+IA & 35 & 45 & 20 & 0 & 100\\
+\hline
+Audio & 30 & 0 & 0 & 70 & 100\\
+\hline
+Site web & 0 & 70 & 0 & 30 & 100\\
+\hline
+Réseau & 0 & 50 & 50 & 0 & 100\\
+\hline
+\end{tabular}
+
+\subsection{Moyens matériels}
+
+\begin{tabular}{|c|c|}
+\hline
+ Timothée & PC fixe, i5 3.30Hz, 8GO de ram, nvidia gtx 770/ Oculus Rift\\
+\hline
+Victor & Acer V3-772 G\\
+\hline
+Steven & MackBook Pro 2011\\
+\hline
+Idris & Acer Aspire 7740\\
+\hline
+\end{tabular}
+
+\begin{center}
+	\includegraphics[scale=0.6]{oculus.jpg}
+\end{center}
+
+\subsection{Logiciels utilisés}
+
+Nous utiliserons les logiciels suivants :
+
+\begin{itemize}
+	\item Unity pour le moteur de jeu
+	\item MonoDevelop / Visual Studio pour développer en C\#
+	\item Blender pour le développement 3D
+	\item Photoshop / Gimp pour le développement 2D
+	\item Skype pour la communication
+	\item GitHub pour le versionning
+	\item Google Drive pour le partage de fichiers
+\end{itemize}
+
+\subsection{Aspects économiques}
+
+Nous prendrons les versions gratuites des logiciels. Nos ordinateurs sont déjà achetés.\\
+Il faudra juste prévoir quelques broutilles afin de développer dans des conditions optimales.\\
+
+\begin{tabular}{|c|c|}
+\hline
+ Produit & Prix \\
+\hline
+Unity Pro & 1300 \euro \\
+\hline
+Adobe Master Collection CS6 & 3499,20 \euro\\
+\hline
+800 cafés & 800 \euro (1 \euro /unitié)\\
+\hline
+Suite de 200m$^2$ en plein Paris & 30000 \euro (7500 \euro / mois)\\
+\hline
+\end{tabular}\\
+
+Le budget total s'élève à seulement 3599,20 \euro.
+
+\newpage
+
+\section{Conclusion}
+
+Maintenant que les grands axes de notre projet sont définis, Il ne nous reste plus qu'à passer à l'action ! Nous en sommes conscients, notre projet est très ambitieux, et demande une grande implication de chacun d'entre nous. Notre tâche est certes ardue, et nous rencontrerons de grandes difficultés sur notre route, que notre détermination et notre persévérance nous permettrons de dépasser.\\
+
+Ce projet nous tient vraiment à coeur car nous avons eu la liberté de fixer, le scénario, le gameplay et les grandes idées de notre jeu. Nous sommes très enthousiastes et impatients de vous présenter notre première soutenance.\\
+
+\begin{center}
+	\includegraphics[scale=0.55]{end.jpeg}
+\end{center}
+
+\end{document}
