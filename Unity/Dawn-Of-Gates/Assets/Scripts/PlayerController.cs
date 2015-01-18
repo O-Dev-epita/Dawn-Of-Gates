@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 	public RotationAxes axes = RotationAxes.MouseXAndY;
 	public float sensitivityX = 15F;
 	public float sensitivityY = 15F;
-	
+	private Vector3 moveDirection = Vector3.zero;
 	public float minimumX = -360F;
 	public float maximumX = 360F;
 	
@@ -18,14 +18,26 @@ public class PlayerController : MonoBehaviour
 	
 	float rotationX = 0F;
 	float rotationY = 0F;
-	
+	private float gravity = 20.0f;
+	private float jumpSpeed = 4.0f;
 	Quaternion originalRotation;
 	
 	void Update() {
 		CharacterController controller = GetComponent<CharacterController>();
+		/*transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
 		Vector3 forward = -transform.TransformDirection(Vector3.forward);
 		float curSpeed = speed * Input.GetAxis("Vertical");
-		controller.SimpleMove(forward * curSpeed);
+		controller.SimpleMove(forward * curSpeed);*/
+		if (controller.isGrounded) {
+			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+			moveDirection = -transform.TransformDirection(moveDirection);
+			moveDirection *= speed;
+			if (Input.GetButton("Jump"))
+				moveDirection.y = jumpSpeed;
+			
+		}
+		moveDirection.y -= gravity * Time.deltaTime;
+		controller.Move(moveDirection * Time.deltaTime);
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			
