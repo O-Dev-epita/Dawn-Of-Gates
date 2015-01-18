@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	public float minimumX = -360F;
 	public float maximumX = 360F;
-	
+	public GameObject shu;
+	public GameObject shus;
 	public float minimumY = -60F;
 	public float maximumY = 60F;
 	
@@ -67,6 +68,14 @@ public class PlayerController : MonoBehaviour
 			
 			Quaternion yQuaternion = Quaternion.AxisAngle (Vector3.left, Mathf.Deg2Rad * rotationY);
 			transform.localRotation = originalRotation * yQuaternion;
+		}
+		if(Input.GetButtonDown("Fire1"))
+		{
+
+			Instantiate(shu,shus.transform.position,shus.transform.rotation);
+
+			
+			
 		}
 	}
 	
