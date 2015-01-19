@@ -7,6 +7,12 @@ public class PlayerController : MonoBehaviour
 	public float rotateSpeed = 2.0F;
 	public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
 	public RotationAxes axes = RotationAxes.MouseXAndY;
+	public enum ControlHoriz { Horizontal = 0 , HorizontalAzerty = 1};
+	public ControlHoriz cth = ControlHoriz.HorizontalAzerty;
+	public enum ControlVerti { Vertical = 0 , VerticalAzerty = 1};
+	public ControlVerti vth = ControlVerti.VerticalAzerty;
+	private string controlh;
+	private string controlv;
 	public float sensitivityX = 15F;
 	public float sensitivityY = 15F;
 	private Vector3 moveDirection = Vector3.zero;
@@ -30,7 +36,7 @@ public class PlayerController : MonoBehaviour
 		float curSpeed = speed * Input.GetAxis("Vertical");
 		controller.SimpleMove(forward * curSpeed);*/
 		if (controller.isGrounded) {
-			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+			moveDirection = new Vector3(Input.GetAxis(controlh), 0, Input.GetAxis(controlv));
 			moveDirection = -transform.TransformDirection(moveDirection);
 			moveDirection *= speed;
 			if (Input.GetButton("Jump"))
@@ -85,6 +91,16 @@ public class PlayerController : MonoBehaviour
 		if (rigidbody)
 			rigidbody.freezeRotation = true;
 		originalRotation = transform.localRotation;
+		if (cth == ControlHoriz.Horizontal) {
+						controlh = "Horizontal";
+				} else {
+						controlh = "Horizontal azerty";
+				}
+		if (vth == ControlVerti.Vertical) {
+			controlv = "Vertical";
+		} else {
+			controlv = "Vertical azerty";
+		}
 	}
 	
 	public static float ClampAngle (float angle, float min, float max)
