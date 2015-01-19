@@ -14,12 +14,11 @@ public class Shuriken : MonoBehaviour
 		Destroy (gameObject, 3);
 	}
 
-	/*void OnCollisionEnter(Collider other)
+	void OnCollisionEnter(Collider other)
 	{
+		Debug.Log (other.name);
 		if(other.tag == "room"){
 			Destroy(gameObject);
 		}
-		Debug.Log (other.name);
-		
-	}*/
+	}
 }
