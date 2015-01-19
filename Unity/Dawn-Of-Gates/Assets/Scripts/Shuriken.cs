@@ -11,14 +11,15 @@ public class Shuriken : MonoBehaviour
 	}
 	void Update () {
 		transform.Translate(Vector3.forward * Time.deltaTime * speed);
+		Destroy (gameObject, 3);
 	}
 
-	void OnCollisionEnter(Collider other)
+	/*void OnCollisionEnter(Collider other)
 	{
 		if(other.tag == "room"){
 			Destroy(gameObject);
 		}
 		Debug.Log (other.name);
 		
-	}
+	}*/
 }
