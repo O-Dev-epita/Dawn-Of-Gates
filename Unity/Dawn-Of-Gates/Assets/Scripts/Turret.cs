@@ -7,8 +7,13 @@ public class Turret : MonoBehaviour {
 	private Transform target;
 	public Projectile bullet;
 	private float nextFire;
+	private turretspawn scr;
 
-	
+	void Start()
+	{
+		GameObject spawn = GameObject.FindWithTag ("turretspawn");
+		scr = (turretspawn) spawn.GetComponent(typeof(turretspawn));
+	}
 	void OnTriggerEnter(Collider otherCollider) {
 
 			target = otherCollider.transform;
@@ -36,7 +41,7 @@ public class Turret : MonoBehaviour {
 			}
 
 
-			bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as Projectile;
+			bullet = Instantiate(bulletPrefab, scr.getTr().position, scr.getTr().rotation) as Projectile;
 
 		}
 	}
