@@ -17,9 +17,10 @@ public class Teleportation : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider)
 	{
-		if(collider.tag == "Player")
-		{
+		Debug.Log(collider.name);
+		//if(collider.tag == "Player")
+		//{
 			collider.transform.position = otherPortal.transform.position + otherPortal.transform.forward * 1;
-		}	
+		//}	
 	}
 }
