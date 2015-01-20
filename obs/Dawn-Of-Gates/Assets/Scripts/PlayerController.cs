@@ -83,13 +83,21 @@ public class PlayerController : MonoBehaviour
 			
 			if(rayTrigger && hit.collider.tag == "room")
 			{
+			
+				if(Input.GetButtonDown("Fire1"))
+				{
+					GameState.Instance.leftPortalOpen = true;
+				}
+				else
+				{
+					GameState.Instance.rightPortalOpen = true;
+				}
+				
 				float distance = hit.distance;
 				float speed = 10f;
 				float time = distance / speed;
 				Destroy(shuClone, time);
 				StartCoroutine(createPortal(time, portal, hit));
-				/*portal.transform.position = hit.point;
-				portal.transform.rotation = Quaternion.LookRotation(hit.normal);*/
 			}
 
 			
