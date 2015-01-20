@@ -9,7 +9,7 @@ public class Teleportation : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+	
 	}
 	
 	bool teleportOk() {
@@ -28,6 +28,7 @@ public class Teleportation : MonoBehaviour {
 		if(this.teleportOk())
 		{
 			collider.transform.position = otherPortal.transform.position + otherPortal.transform.forward * 1;
+			collider.transform.rotation = otherPortal.transform.rotation;
 		}	
 	}
 }

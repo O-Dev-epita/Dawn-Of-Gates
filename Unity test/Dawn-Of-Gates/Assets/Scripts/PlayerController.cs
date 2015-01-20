@@ -12,13 +12,8 @@ public class PlayerController : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	public float minimumX = -360F;
 	public float maximumX = 360F;
-	public GameObject shu;
-	public GameObject shus;
 	public float minimumY = -60F;
 	public float maximumY = 60F;
-	
-	public GameObject leftPortal;
-	public GameObject rightPortal;
 	
 	float rotationX = 0F;
 	float rotationY = 0F;
@@ -72,44 +67,6 @@ public class PlayerController : MonoBehaviour
 			Quaternion yQuaternion = Quaternion.AxisAngle (Vector3.left, Mathf.Deg2Rad * rotationY);
 			transform.localRotation = originalRotation * yQuaternion;
 		}
-		if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2"))
-		{
-			GameObject portal = Input.GetButtonDown("Fire1") ? leftPortal : rightPortal;	
-			
-
-			RaycastHit hit;
-			bool rayTrigger = Physics.Raycast(shus.transform.position, shus.transform.forward, out hit, 100f);
-			Object shuClone = Instantiate(shu,shus.transform.position,shus.transform.rotation);
-			
-			if(rayTrigger && hit.collider.tag == "room")
-			{
-			
-				if(Input.GetButtonDown("Fire1"))
-				{
-					GameState.Instance.leftPortalOpen = true;
-				}
-				else
-				{
-					GameState.Instance.rightPortalOpen = true;
-				}
-				
-				float distance = hit.distance;
-				float speed = 10f;
-				float time = distance / speed;
-				Destroy(shuClone, time);
-				StartCoroutine(createPortal(time, portal, hit));
-			}
-
-			
-			
-		}
-	}
-	
-	IEnumerator createPortal(float time, GameObject portal, RaycastHit hit)
-	{
-		yield return new WaitForSeconds(time);
-		portal.transform.position = hit.point;
-		portal.transform.rotation = Quaternion.LookRotation(hit.normal);
 	}
 	
 	void Start ()

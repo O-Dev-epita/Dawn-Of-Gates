@@ -4,13 +4,50 @@ using System.Collections;
 public class Shuriken : MonoBehaviour 
 {
 	public int speed = 10;
+	
+	public GameObject Portal { get; set; }
+	
+	private bool hasPortal;
+	private float distance;
+	private RaycastHit hit;
+	
+	
 	void Start()
 	{
-		//transform.rotation = new Quaternion (0f, 0.7059872f, 0.7082247f, 0f);
-		//transform.Rotate (90f, 0f, 0f, Space.World);
+		
+		RaycastHit hit;
+		if(Physics.Raycast(transform.position, transform.forward, out hit, 100f))
+		{	
+			hasPortal = hit.collider.tag == "room";
+			this.hit = hit;
+			distance = hit.distance;
+		}
+		else
+		{
+			hasPortal = false;
+			distance = 100f;
+		}
+		Debug.Log(distance);
 	}
 	void Update () {
-		transform.Translate(Vector3.forward * Time.deltaTime * speed);
-		Destroy (gameObject, 3);
+		float dist = Time.deltaTime * speed * GameState.Instance.UniversalTime;
+		distance -= dist;
+		transform.Translate(Vector3.forward * dist);
+		if(distance < 0)
+		{
+			if(hasPortal) {
+				if(Portal.name == "LeftPortal")
+				{
+					GameState.Instance.leftPortalOpen = true;
+				}
+				else
+				{
+					GameState.Instance.rightPortalOpen = true;
+				}
+				Portal.transform.position = hit.point;
+				Portal.transform.rotation = Quaternion.LookRotation(hit.normal);
+			}
+			Destroy(gameObject);
+		}
 	}
 }

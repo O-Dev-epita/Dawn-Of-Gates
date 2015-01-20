@@ -49,13 +49,14 @@
      <Compile Include="Assets\Scripts\GameState.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Shuriken.cs" />
+     <Compile Include="Assets\Scripts\SlowMotion.cs" />
      <Compile Include="Assets\Scripts\Teleportation.cs" />
+     <Compile Include="Assets\Scripts\ThrowShuriken.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
-     <None Include="Assets\Shaders\FillZValue.shader" />
-     <None Include="Assets\Shaders\JustZValue.shader" />
+     <None Include="Assets\Shaders\Mirror.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
