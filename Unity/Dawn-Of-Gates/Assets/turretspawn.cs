@@ -17,7 +17,7 @@ public class turretspawn : MonoBehaviour {
 	{
 		targetpoint = target.position;
 		targetRotation = Quaternion.LookRotation(targetpoint - transform.position,Vector3.up);
-		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2.0f);
+		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 3.0f);
 
 	}
 

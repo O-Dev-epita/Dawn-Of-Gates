@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour {
 
-	public int speed = 2;
+	public float speed = 0.3f;
 
 	void Start()
 	{
