@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameState.cs">
+    <Files>
+      <File FileName="obs.sln" Line="40" Column="1" />
+      <File FileName="Assets\Scripts\Characters\Stats\CharacterStats.cs" Line="21" Column="10" />
+      <File FileName="Assets\Scripts\GameState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Characters\Stats\EnnemySats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Characters\Stats\PlayerStats.cs" Line="29" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
