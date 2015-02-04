@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: c4014687b329e3543bdf48fbe58a2576
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - outline: {instanceID: 0}
+  - lifebar: {instanceID: 0}
+  - outline_mat: {fileID: 2100000, guid: 4a05b91b5e61d8b42b2a28d5d3fe4e8c, type: 2}
+  - lifebar_mat: {fileID: 2100000, guid: ea5a15159e682a949b065541a48297a0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
