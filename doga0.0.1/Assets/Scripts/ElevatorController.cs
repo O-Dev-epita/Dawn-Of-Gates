@@ -5,21 +5,22 @@ public class ElevatorController : MonoBehaviour {
 
 	public GameObject leftDoor;
 	public GameObject rightDoor;
-	
-	void OnTriggerEnter(Collider other)
+	public int level;
+
+	public void closeDoors()
 	{
-		leftDoor.animation.Play ("porteg");
-		rightDoor.animation.Play ("ported");
+		leftDoor.animation.Play("porteg");
+		rightDoor.animation.Play("ported");
 	}
 
-	void OnTriggerExit(Collider other)
+	public void openDoors()
 	{
-		leftDoor.animation.Play ("invporteg");
-		rightDoor.animation.Play ("invported");
+		leftDoor.animation.Play("invporteg");
+		rightDoor.animation.Play("invported");
 	}
 
-	void Update ()
+	public void nextLevel()
 	{
-	
+		Application.LoadLevel(level+1);
 	}
 }

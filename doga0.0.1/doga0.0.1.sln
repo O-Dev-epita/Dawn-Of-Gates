@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{7709CF02-8C82-249F-0F06-BFDE38AA7C2D}") = "doga0.0.1", "Assembly-CSharp.csproj", "{26C99635-BEDF-8861-608B-1B0F933B7EAC}"
 EndProject
+Project("{7709CF02-8C82-249F-0F06-BFDE38AA7C2D}") = "doga0.0.1", "Assembly-CSharp-Editor.csproj", "{8A1232FA-4D4B-AA7E-FCC5-10EA850FB0C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{26C99635-BEDF-8861-608B-1B0F933B7EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26C99635-BEDF-8861-608B-1B0F933B7EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26C99635-BEDF-8861-608B-1B0F933B7EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1232FA-4D4B-AA7E-FCC5-10EA850FB0C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1232FA-4D4B-AA7E-FCC5-10EA850FB0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1232FA-4D4B-AA7E-FCC5-10EA850FB0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1232FA-4D4B-AA7E-FCC5-10EA850FB0C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-							GlobalSection(MonoDevelopProperties) = preSolution
+																											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

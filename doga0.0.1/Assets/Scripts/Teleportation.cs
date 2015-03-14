@@ -7,6 +7,7 @@ public class Teleportation : MonoBehaviour {
 	public Texture openedPortalTexture;
 	public Texture closedPortalTexture;
 	public GameObject animatedportal;
+	public GameObject cam;
 
 	
 	// Use this for initialization
@@ -26,12 +27,12 @@ public class Teleportation : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider)
 	{
-		Debug.Log(collider.name);
+
 		if(this.teleportOk())
 		{
 			collider.transform.position = otherPortal.transform.position;
-			Camera.main.transform.rotation = otherPortal.transform.rotation;
-			collider.transform.position += Camera.main.transform.TransformDirection(Vector3.forward * 2f);
+			cam.transform.rotation = otherPortal.transform.rotation;
+			collider.transform.position += cam.transform.TransformDirection(Vector3.forward * 2f);
 			//collider.transform.rotation = otherPortal.transform.rotation;
 
 		}	

@@ -4,11 +4,11 @@ using System.Collections;
 public class Projectile : MonoBehaviour {
 
 	public float speed = 0.3f;
+	private GameObject lifeBar;
 	
 	void Start()
 	{
-		
-		
+		lifeBar = GameObject.FindGameObjectWithTag("life");
 	}
 	void Update () {
 		
@@ -22,6 +22,15 @@ public class Projectile : MonoBehaviour {
 		
 		
 		
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+
+		if (other.tag == "Player")
+		{
+			lifeBar.GetComponent<MyGui>().Life -= 0.1f;
+		}
 	}
 	
 }

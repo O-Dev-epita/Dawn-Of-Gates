@@ -16,15 +16,18 @@ public class Turret : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider otherCollider) {
 
-			target = otherCollider.transform;
-			StartCoroutine ("Fire");
+		if (otherCollider.tag == "Player") {
+						target = otherCollider.transform;
+						StartCoroutine ("Fire");
+				}
 		
 	}
 	
 	void  OnTriggerExit(Collider otherCollider) {
-
-			target = null;
-			StopCoroutine("Fire");
+		if (otherCollider.tag == "Player") {
+						target = null;
+						StopCoroutine ("Fire");
+				}
 
 	}
 	
