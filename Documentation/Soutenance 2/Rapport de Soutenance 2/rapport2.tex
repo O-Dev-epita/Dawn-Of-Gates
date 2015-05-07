@@ -1,0 +1,342 @@
+\documentclass[12pt]{article}
+\usepackage[francais]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+\pagestyle{fancy} 
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyfoot[R]{\includegraphics [width=4cm]{logo.jpg}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Rapport de soutenance 2\\[0.4cm] }
+		\HRule \\[2cm]
+
+
+		\large \textsc{Brenet} Timothée\\
+		\textsc{Lafargue} Victor\\
+		\textsc{Lariau} Steven
+
+		\includegraphics[scale=0.55]{logo2.png}
+
+	\end{center}
+\end{titlepage}
+
+\newpage
+
+\renewcommand{\contentsname}{Sommaire}
+\tableofcontents
+
+\newpage
+
+\section{Rappels de notre projet}
+
+Nous allons vous présenter notre projet, intitulé Dawn of Gates. Derrière ce nom peu évocateur se cache une équipe soudée et un projet ambitieux. Nous sommes tous enthousiastes et impatients à l'idée de le réaliser, d'apprendre de nouvelles connaissances, et de nous surpasser afin d'avoir un rendu final à la hauteur de nos espérances.
+
+\subsection{L'oculus Rift}
+
+Nous avons choisi de nous lancer dans la création d'un jeu en réalité virtuelle. Ceci à l'aide du casque Oculus Rift, un bijou de technologie encore en phase de développement, qui donne des résultats très prometteurs. Contrairement aux jeux-vidéos sur le marché, l'Oculus permet une immersion totale dans le jeu. Il présente l'avantage de profiter d'une vue à la première personne à 360degres. C'est-à-dire que nous percevons l'environnement qui nous entoure sous tous les angles avec une impression 3D saisissante. Nous aimons les perspectives d'un tel outil et c'est pourquoi nous tenons à travailler dessus.
+
+\subsection{Notre jeu : Dawn of Gates}
+
+Faisant de Portal notre source d'inspiration, nous avons décidé de garder le concept de portails tridimensionnel qui servent à se déplacer entre deux points instantanément. Une infinité de possibilités sont à explorer avec ces portails qui nous ouvrent un champ d'action quasi-infini. Nous pensons déjà à l'utilisation des portails pour résoudre certaines énigmes ainsi que venir à bout d'ennemis coriaces. Tout ceci dans des pièces adaptées à notre gameplay.\\
+L'Oculus sublimera le rendu grâce à l'époustouflante immersion dans la peau du personnage qu'il permet.\\
+
+Un style graphique Toon nous semble être une excellente idée pour affirmer au maximum l'identité visuelle de notre jeu. . Nous choisirons un gameplay profitant au maximum des capacités de l'Oculus Rift.\\
+
+Notre héros est un ninja, n'hésitant pas à risquer sa vie afin de poursuivre le voleur ayant détroussé sa petite amie d'un objet très précieux.\\
+Allant de salles en salles, il doit déjouer les pièges et résoudre les énigmes d'un étrange bâtiment, tout en affrontant des hordes d'ennemies déchaînées. Pour venir à bout de sa quête il peut compter sur ses shurikens, qui peuvent aussi bien tuer que ouvrir des portails. Ils lui permettent de se déplacer plus vite mais aussi d'affronter les nombreux dangers jalonnant sa route. Il est aussi capable de ralentir le temps afin d'esquiver tout types de projectiles.
+
+\subsection{But et intérêts du projet}
+
+Le but de ce projet est d'aboutir à un jeu réellement jouable au gameplay attractif et original. Nous souhaiterions qu'arrivé à la date d'échéance le jeu soit assez aboutit pour être commercialisable.\\
+L'intérêt de ce projet au-delà du jeu en lui-même est d'apprendre et de gagner en expérience. Nous perfectionnerons ainsi notre maîtrise du langage C\#, nous apprendrons à maîtriser Unity, MonoDevelop, Visual Studio, Blender... Grâce à ce projet nous acquerrons aussi une expérience de travail en équipe et d'entraide.
+
+
+\section{Départ d'un membre}
+
+Idris, bien qu'étant encore présent à Epita, ne s'implique plus du tout dans le projet. Nous avons donc décidé de l'exclure de notre groupe.\\
+Nous avons donc modifier les plannings afin de réaliser ce qu'Iris était sensé faire.
+
+\subsection{Nouveaux plannings}
+
+\subsubsection{Première période}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Timothée & Steven & Victor & Total\\
+\hline
+Code (Base) & 20 & 20 & 20 & 60\\
+\hline
+Graphismes & 0 & 0 & 40 & 40\\
+\hline
+Animations & 10 & 0 & 30 & 40\\
+\hline
+Niveaux & 6 & 6 & 8 & 20\\
+\hline
+IA & 15 & 20 & 15 & 40\\
+\hline
+Audio & 0 & 0 & 0 & 0\\
+\hline
+Site web & 0 & 50 & 0 & 50\\
+\hline
+Réseau & 0 & 0 & 0 & 0\\
+\hline
+\end{tabular}
+
+\subsubsection{Deuxième période}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Timothée & Steven & Victor & Total\\
+\hline
+Code (Base) & 30 & 25 & 25 & 80\\
+\hline
+Graphismes & 0 & 0 & 60 & 60\\
+\hline
+Animations & 20 & 0 & 40 & 60\\
+\hline
+Niveaux & 25 & 25 & 5 & 55\\
+\hline
+IA & 25 & 30 & 15 & 70\\
+\hline
+Audio & 25 & 0 & 0 & 25\\
+\hline
+Site web & 0 & 60 & 0 & 60\\
+\hline
+Réseau & 0 & 10 & 10 & 20\\
+\hline
+\end{tabular}
+
+\subsubsection{Troisième période}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Timothée & Steven & Victor & Total\\
+\hline
+Code (Base) & 40 & 30 & 30 & 100\\
+\hline
+Graphismes & 0 & 0 & 100 & 100\\
+\hline
+Animations & 20 & 0 & 80 & 100\\
+\hline
+Niveaux & 35 & 35 & 30 & 100\\
+\hline
+IA & 45 & 35 & 20 & 100\\
+\hline
+Audio & 33 & 34 & 33 & 100\\
+\hline
+Site web & 10 & 90 & 0 & 100\\
+\hline
+Réseau & 0 & 50 & 50 & 100\\
+\hline
+\end{tabular}
+
+
+\section{Travail réalisé pour la première soutenance}
+
+Pour la première soutenance, nous avons notamment décidé de réaliser les bases du jeu, les fondements, sans vraiment se concentrer sur les détails et le gameplay.
+
+\newpage
+
+\subsection{Le scénario}
+
+Nous avons commencé par poser le scénario.\\
+Au début, dans l'introduction du jeu, notre héros se promène avec sa petite amie dans la rue. C'est alors qu'un homme mystérieux lui arrache son splendide collier. Celui-ci est poursuivi  par notre héros qui se trouve être un ninja. Il le poursuit jusque dans un immeuble assez étrange , où il se fait enfermer. Prisonnier, il décide de déjouer tous les pièges pour trouver la salle où se cache le mystérieux voleur. Sur son chemin il découvre des armes dotées de pouvoir fantastiques qui lui permettent d'ouvrir des portails et d'accroitre des sens. Si le joueur parvient au bout des différents niveaux, il devra affronter le Boss final et récupérera (peut-être) le collier.\\
+Le héros est donc plongé dans un univers semi-fantastique où il se découvre des talents cachés. Il défie des ennemis surentrainés et des robots tueurs, tout en faisant preuve d'ingéniosité pour parvenir à son but final.
+
+\subsection{Le Menu principal}
+
+Timothée a réalisé le menu principal, présent lors du lancement du jeu. Il possèdent plusieurs boutons :
+\begin{itemize}
+	\item Jouer : amenant à l'écran de jeu
+	\item Quitter : pour fermer le jeu
+\end{itemize}
+
+\subsection{Interface de jeu}
+
+L'interface de jeu, crée par Victor, est une barre de vie permettant de savoir la vie restante du joueur.
+
+\subsection{Les Modèles}
+
+Victor a réalisé les modèles du jeu, notamment un niveau d'introduction ainsi que le premier niveau.\\
+Il a aussi réalisé les modèles du personnage principal, ainsi que des ennemis, des tourelles et du boss final de notre jeu.
+
+\newpage
+
+\subsection{Déplacement du ninja}
+
+Victor s'est occupé des scripts permettant au ninja de se déplacer dans le niveau, grâce aux touches du clavier.\\
+Timothée quand à lui a mis en place la caméra à la première personne, afin que lorsque l'on bouge la tête avec l'oculus, la tête du personnage bouge aussi.
+
+\subsection{Lancers de shurikens}
+
+Steven a réalisé les scripts permettant au ninja de lancer des shurikens avec la souris, et qui peuvent rentrer en collision avec l'environnement. Notamment, lorsqu'ils touchent un mur, ils se transforment en portail.
+
+\subsection{Les portails}
+
+Steven s'est occupé de la gestion des portails, c'est à dire l'effet "miroir", qui permet de voir à travers un portail ce qu'il y a à travers le second portail, ainsi que la possibilité de téléporter tous les objets et personnages passant à travers un portail.
+
+\subsection{Les ennemis}
+
+Timothée a réalisé l'intelligence artificielle des tourelles, afin qu'elles puissent viser le joueur et tirer lorsque celui ci est proche. Il a aussi réglé la vitesse de tir et de visée afin que les joueurs puissent les éviter sans que cela soit trop facile non plus.
+
+\subsection{Changements de niveaux}
+
+Steven gère les changements entre les différents niveaux. Ils utilisent les ascenseurs, un premier qui s'ouvre au début du niveau, et un second, à la fin du niveau, qui permet d'aller au niveau suivant.
+
+\newpage
+
+\subsection{Le site web}
+
+Steven a créé un site web qui présente notre jeu. Celui-ci contient différentes pages :
+\begin{itemize}
+\item Une page d'accueil présentant très brièvement le projet
+\item Téléchargements : Permet de télécharger le jeu, ainsi que les rapports et autres documentations.
+\item Présentation : Une page web contenant la présentation des membres ainsi que du projet.
+\item Liens : Contient différents liens vers des logiciels et des tutoriels utiles à la réalisation de notre projet.
+\end{itemize}
+
+\section{Organisation pour la deuxième soutenance}
+
+Pour la deuxième soutenance, nous avons commencé par nous répartir les tâches, et nous avons chacun travaillés sur nos propres améliorations et features, avant de mettre notre travail en commun afin d'avoir un jeu fonctionnel et cohérent pour la deuxième soutenance.\\
+Comme pour la première soutenance, nous utilisons Github afin de pouvoir gérer le projet, ainsi que Skype pour communiquer.
+
+\section{Avancées depuis la première soutenance}
+
+\subsection{Le niveau final}
+
+Nous avions prévu de réaliser pour la deuxième soutenance des niveaux avec un véritable gameplay, c'est à dire que nous voulions des niveaux où il soit nécessaire de réfléchir et d'accomplir plusieurs tâches afin de venir à bout des difficultés et du niveau, et pas seulement de simples niveaux de test qui se contentent seulement de présenter les différentes features du jeu, comme nous avons montré lors de la première soutenance.\\
+Pour cela nous avons réfléchi à différentes possibilités, fais des schémas de niveaux sur feuille, et imaginé de nombreux gameplay possibles, avant de finalement arriver à une idée de niveau proposant un gameplay à la fois intéressant et réalisable: le niveau final.\\
+
+Ce niveau comprend 3 salles : deux premières, à gauche et à droite, possédant chacun une dalle à activer. \\
+La salle de gauche est la première épreuve du niveau final de ce jeu. Le joueur devra y activer une dalle dorée pour ouvrir la porte menant au boss final. Pour parvenir à cette dalle à l'autre bout de la salle, il aura à affronter deux ennemis et à échapper aux tirs d'une arbalète. Après cela il devra traversé un bassin rempli d'eau rendant indispensable l'utilisation des portails de téléportation pour aller jusqu'à la dalle à activer et revenir en sens inverse.\\
+Pour réussir à pénétrer dans la salle du boss final, le joueur devra activer la seconde dalle dorée dans cette nouvelle pièce. Ainsi fait la porte d'accès vers la salle de combat contre le boss final s'ouvrira débutant ainsi le dénouement du jeu. Cette seconde salle sera remplit d'arbalètes tirant des flèches automatiquement. Tout l'objet de cette salle est de permettre au joueur de se servir de la capacité du personnage à ralentir le temps : le « slow motion ».\\
+
+Une fois les deux dalles activées, la porte de la salle contenant le niveau final s'ouvre. Une fois à l'intérieur, le boss est présent, mais nous avons décidé d'implémenter son intelligence artificielle uniquement pour la troisième soutenance. Donc pour l'instant il est immobile et ne peut être combattu. La porte derrière lui est ouverte, et mène à la sortie et la fin du jeu.
+
+\subsection{Steven Lariau}
+
+\subsubsection{Le slow motion}
+
+Le slow motion permet au ninja de ralentir le temps, il peut ainsi se déplacer alors que les ennemis et les projectiles se déplacent bien plus lentement, permettant au joueur de se sortir ainsi de situations difficiles.\\
+En contrepartie, cette fonctionnalité n'est pas disponible en illimité, elle doit donc être utilisé à bon escient, lots de situations périlleuses, et rajoute ainsi un aspect tactique au gameplay de notre jeu.
+
+\newpage
+
+Le slow motion s'active et se désactive en appuyant sur une touche. Lorsque celui-ci est activé, la vitesse de déplacement de tous les objets, exceptés du personnage principal, est considérablement ralenti. Pour cela, j'utilise une variable, un float représentant l'état du slow motion. Tous les objects pouvant être affectés par le slow motion, ont leur vitesse de déplacement multipliée par cette variable. Par défaut, lorsque le slow motion est désactivé, cette variable est à 1, la vitesse est donc multipliée par 1 et reste normale. En revanche, lorsque le slow motion est activée, la vitesse de cette variable, diminue considérablement, elle est à 0,1, c'est à dire que la vitesse de tous les objets affectés par le slow motion est multipliée par 0,1, donc divisée par 10.\\
+
+L'utilisation du slow motion est limitée, pour cela le joueur possède une "quantité d'énergie" variant de 0 à 1. Lorsque le slow motion est activé, l'énergie diminue petit à petit, mais lorsque le slow motion est désactivé, l'énergie augmente alors.
+
+\subsubsection{Scripts dédiés au niveau final}
+
+Je me suis occupé des scripts permettant d'implémenter les spécificités du dernier niveau.\\
+Pour les dalles, j'ai mis un box collider sur chacune d'elle, lorsque celui est déclenché, l'état de la dalle, inactif par défaut, devient actif, et l'état de l'autre dalle est vérifiée. Si elle est, elle aussi, active, l'animation d'ouverture des portes de la salle du boss se déclenche.\\
+J'ai aussi géré les scripts pour la salle de gauche, avec les arbalètes et le slow motion. Tout d'abord, les arbalètes se comportent différemment des premières rencontrées, celles-ci se contentent de tirer tout droit et ne visent pas le joueur. De plus elles tirent uniquement lorsque le joueur est à l'intérieur de la salle et lorsque la dalle n'est pas encore activée. Pour cela, je mets un box collider sur la salle, ainsi qu'un script, qui active les arbalètes lorsque le joueur déclenche le collider, si la dalle n'a pas encore été déclenchée, et qui les désactive lorsque lorsque le joueur quitte le collider ou lorsque la dalle est déclenchée.
+
+\subsubsection{Audio}
+
+La difficulté de la partie audio ne réside pas dans l'intégration des sons aux jeux, mais dans les choix de ceux-ci. Pour la musique de fond de notre jeu, nous devons trouver une musique de style asiatique, correspondent bien à l'ambiance du jeu. Après plusieurs recherches, j'en ai trouvé une faisant l'affaire.\\
+Pour l'intégrer à Unity, je me suis servi tout d'abord de la camera comme audio listener, il permet d'entendre les sons. De plus, plus un objet produisant du son est éloigné de l'audio listener, plus le son résultant sera faible, et inversement. Ainsi, plus un objet est près du ninja, plus il produira un bruit fort, ce qui est l'effet voulu.\\
+La caméra a en plus une audio source, qui est le fichier son de la musique de fond, ainsi, elle a en permanence la même intensité sonore.\\
+
+Ensuite, j'ai cherché des sons de bruitages pour le lancer de shurikens, l'ouverture des portails, ...
+
+\subsubsection{Le site web}
+
+J'ai refait la structure du site web. Pour la première soutenance, c'était seulement un site web statique avec des pages HTML et CSS. Maintenant le site web utilise PHP afin de pouvoir stocker des données sur le serveur.\\
+PHP m'a tout d'abord permis d'éviter la duplication de code, en regroupant le code HTML identique à chaque page web, c'est-à-dire l'en-tête, le menu de navigation et le pied de page, dans un unique fichier. Ensuite, les autres fichiers ne contiennent maintenant plus que le corps de la page.\\
+Ensuite, j'ai rajouté une nouvelle page: scores. Celle-ci contient les 5 meilleurs temps réalisés pour chaque niveau. J'aurais pu utiliser une base de données pour stocker les meilleurs temps, mais étant donné le peu de données à enregistrer (5 entiers pour chaque niveau), j'ai préféré utiliser un simple fichier, ce qui est plus rapide qu'une base de données pour stocker une petite quantité d'informations.\\
+Les scores sont donc enregistrées et chargées depuis un fichier, grâce à la sérialisation, qui permet de transformer un objet PHP en texte, et inversement.
+
+\newpage
+
+Pour enregistrer les scores, lorsque le joueur à fini un niveau, une requête HTTP est envoyé au serveur, contenant le niveau terminé ainsi que le temps réalisé. Le serveur va ensuite mettre à jour le classement correspondant à ce niveau.
+
+\subsection{Timothée Brenet}
+
+\subsubsection{Les ennemis}
+
+Les ennemis sont des pièces très importants dans notre jeu, jusqu'à présent il n'y avait que des tourelles qui d'ailleurs ne peuvent pas être détruites. Même si elles visent bien, le joueur peut assez facilement les esquiver en sortant du champ d'action des tourelles.Les ennemis mobiles, qui sont des petits samouraïs, seront beaucoup plus difficile a éviter et feront plus de dégâts au joueur. Il faudra donc au joueur de bien savoir se servir de ses capacités comme les portails pour éviter les ennemis ou le slow motion pour les éviter plus rapidement au cas où on s'est fait repérée.\\
+Les ennemis ont une intelligence artificielle plus dévelloppée que les tourelles. Nous avons réfléchi au fait que les ennemis devaient paraître relativement vivant et devait pouvoir repérer le joueur mais pas seulement lorsque celui-ci est dans une zone comme les tourelles.Du coup nous avons pensé que les ennemis auraient trois état différents soit il patrouille dans une zone, soit il attaque le joueur ou finalement il meurt. Ainsi l'ennemi paraît vivant car il se déplace dans une zone, il n'est pas juste statique dans une zone a attendre que le joueur passe dans cette zone. L'ennemi repère le joueur lorsque celui-ci et dans son champ de vision défini par un angle que l'on peut régler si le joueur est dans ce champ de vision alors l'ennemi se rapproche du joueur a une distance suffisante du joueur pour le toucher lorsque celui-ci l'attaque. En effet l'ennemi dispose d'une epée pour attaquer donc il doit être suffisamment près du joueur pour le toucher. Mais bien sûr le joueur ne va pas se laisser faire et ne va pas juste attendre que l'ennemi l'attaque, il vas essayer de le semer, nous avalons penser que l'ennemi devrait suivre le joueur tant que celui-ci est assez proche de l'ennemi. Finalement lorsque le joueur a réussi a échapper a l'ennemi , celui-ci vas aller a la dernière position connue du joueur et attendre une courte durée de temps, si le joueur n'est pas redetectée par cet ennemi celui-ci revient effectuer sa patrouille dans sa zone prédéfinit.\\
+Une fois le modèle du samouraï réalisé par Victor, j'ai pu réfléchir a comment réaliser notre idée pour les ennemis, d'abord j'ai pensé quand reprenant le script de la tourelle, qui visait le joueur, pouvait me servir j'aurais finalement ajouté une vitesse a l'ennemi qui irait droit sur le joueur, mais cela n'était pas adapté car l'ennemi traverserait les murs et de plus ce n'était pas la meilleure solution pour le rendre plus vivant.\\Je me suis donc ensuite plutôt renseigner sur comment donner a un personnage la capacité de se déplacer tout seul. Je suis tombé sur le module navigation de unity qui donne cette opportunité. Enfaite ce module permet d'établir une carte de déplacement possible pour un objet définit, on indique a unity sur quelle surface le personnage a le droit de se déplacer puis il calcule en fonction de la taille du personnage rétablir une carte de déplacement possible pour que celui-ci ne touche pas les autres objets. Puis il faut ajouter sur le personnage un "navmeshagent" qui lui permet de ce déplacer sur cette carte selon des paramètres modifiables.\\On peut par exemple lui donner une destination,qui corresponde a des position,qui se trouve sur la carte de navigation et le "navmeshagent" établira le chemin le plus court en évitant les murs pour allez a cette destination. Cette fonctionnalité est donc utilise pour permettre au personnage de patrouiller dans une zone
+, en définissant plusieurs point de passages on peut établir un chemin que l'ennemi prendra en boucle. Notre ennemi faisait maintenant des patrouilles. Pour que l'ennemi repère le joueur celui-ci dispose d'un sphere collider, lorsque le joueur rentre dans cette zone, on fait un raycast du vecteur normal a l'ennemi au dans la direction du joueur puis on calcule l'angle entre les deux vecteur. Si cette angle est inférieur a 60° cela indique que le joueur se trouve dans le champ de vision de l'ennemi (angle de 120°). Pour résumer le joueur étant dans le sphere collider, il est assez proche de l'ennemi et étant dans son champ de vision l'ennemi peut le voir. Mais il reste encore un problème si le joueur se trouve dans le champ de vision mais derriere un mur l'ennemi ne doit pas pouvoir repère le joueur d'où l'utilisation du raycast entre l'ennemi et le joueur si aucun autre objet n'est touché appart le joueur et l'ennemi alors le joueur n'est pas derriere un objet et l'ennemi peut repérer le joueur.\\
+Le joueur est maintenant repérer par l'ennemi mais l'ennemi doit attaquer le joueur seulement si celui-ci est assez proche sinon il doit le poursuivre. Enfaite c'est le raycast auquelle on ajoute une distance si le joueur se trouve dans la sphere mais n est pas toucher par le raycast alors l'ennemi vas a la position du joueur pour le poursuivre, par contre si le joueur est toucher par le raycast alors l'ennemi l'attaque et fait des dégâts aux joueurs.\\
+Le joueur peut tuer les ennemis en leur lancent des shurikens, si les ennemis se font toucher par deux shurikens il meurt.\\Pour représenter les différents états de l'ennemi et le rendre plus vivant, nous avons ajouter des animations créer pas Victor pour que les animations se lancent au bon moment selon l'état de l'ennemi(poursuite,patrouille,attaque) on utilise l'animator controller, on peut définir le lancement d'animation selon des variables et unity fait la transition entre les différentes animations. Nos ennemis disposent maintenant d'une intelligence artificielle pour attaquer le joueur et le poursuivre rendant le gameplay plus intéressant et plus complexes.
+
+\subsection{Victor Lafargue}
+
+
+\subsubsection{Le menu de pause}
+
+Le menu pause permet au joueur de s'arrêter de jouer temporairement. Il s'intègre au jeu  en affichant pour l'instant trois options : reprendre le jeu en cours, modifier le volume sonore et quitter définitivement le jeu. Les trois options sont affichées à l'aide de texte 3D étant donné qu'il n'est pas possible d'implémenter une interface 2D Unity avec l'Oculus. Les options sont affichées de couleur noire sauf l'option actuellement sélectionnée qui est en jaune. Ceci permet au joueur de naviguer dans le menu de pause à l'aide des flèches directionnelles haut et bas.\\
+Le bouton de régulation du volume sonore est actualisé en permanence, il affiche son pourcentage. Le volume est modifié avec les flèches directionnelles gauche droite. Les fonctions d'Unity sont ensuite utilisées pour réguler l'intensité de la musique du jeu. Le joueur a ainsi une bonne expérience de jeu car il peut profiter de l'aspect audio de notre jeu selon ces souhaits.
+
+\subsubsection{Le niveau final}
+
+Il existait à l'origine deux niveaux différents le premier étant un château et le second étant plusieurs salles avec des murs en bois. Pour donner une meilleure expérience de jeu au joueur et améliorer le gameplay et le réel intérêt des niveaux de notre jeu nous avons décidé de fusionner les deux niveaux en un seul plus complet. Ce niveau final reflétera, nous l'espérons, au mieux les qualités de notre jeu et les innovations inédites de son gameplay tel que les portails de téléportation et le slow motion. Dans la continuité des autres niveaux nous avons voulu conserver le style asiatique qui marque notre jeu mais ce niveau aura pour distinction de ne pas être un environnement clos puisqu'il débouchera sur l'extérieur. Il est composé d'un château fort de style asiatique composé de trois salles différentes : les deux premières permettront de débloquer l'accès à une troisième. Dans la troisième salle le joueur affrontera le boss final, combat à la fin duquel il sortira du château et pourra admirer l'ensemble du château avec l'entrée du château, la fontaine, les tours, le pont-levis ...\\
+Pour la conception de ce niveau, j'ai réellement essayé de travailler un maximum l'aspect graphique du jeu. Le travail de conception d'un niveau comme celui-ci est très long et laborieux, il nécessite un beaucoup de persévérance et de rigueur pour le finaliser à temps. La conception d'un tel niveau nécessite tout d'abord énormément de recherches d'inspiration pour modéliser mais aussi de différentes textures pour mettre en couleur. Il faut ensuite passer au travail de modélisation qui se révèle souvent être un casse-tête car les objets tirés sur des images tirées d'internet sont souvent représentées d'un seul côté et souvent en perspective, il faut alors deviner ou s'imaginer l'objet en trois dimensions pour le modéliser avec des dimensions réalistes et avec des courbes fidèles à la réalité. De même il est très difficile de tirer une texture d'une image d'un objet en perspective, on prend alors souvent une autre texture. Il faut ensuite l'appliquer correctement au modèle en trois dimensions. Tout ceci est très complexe et couteux en temps mais il nous permet aujourd'hui de présenter un niveau digne de ce nom.\\
+La salle de gauche est la première épreuve du niveau final de ce jeu. Le joueur devra y activer une dalle dorée pour ouvrir la porte menant au boss final. Pour parvenir à cette dalle à l'autre bout de la salle, il aura à affronter deux ennemis et à échapper aux tirs d'une arbalète. Après cela il devra traverser un bassin rempli d'eau rendant indispensable l'utilisation des portails de téléportation pour aller jusque à la dalle à activer et revenir en sens inverse.\\
+Pour réussir à pénétrer dans la salle du boss final, le joueur devra activer la seconde dalle dorée dans la pièce de droite. Ainsi fait la porte d'accès vers la salle de combat contre le boss final s'ouvrira débutant ainsi le dénouement du jeu. Cette seconde salle sera rempli d'arbalètes tirant des flèches automatiquement. Tout l'objet de cette salle est de permettre au joueur de se servir de la capacité du personnage à ralentir le temps : le « slow motion ».\\
+Le dernière salle est la salle de combat contre le boss finale. Cette salle ne s'ouvrira que lorsque les deux dalles auront été activées et donc lorsque le joueur aura démontré sa capacité à maitriser les portails de téléportation et le slow motion. Le boss final est un grand samouraï. Ses animations et son intelligence artificielle n'ont pas encore été développé par manque de temps mais le seront en temps et en heure. L'affrontement final sera d'une certaine difficulté et nécessitera au joueur de se remémorer tous les enseignements sur les capacités du personnage au cours du scénario du jeu. Une fois que le joueur aura battu le boss final il pourra sortir du château puis de l'enceinte du château. Cette sortie symbolisera en fait la fin du jeu puisque le personnage retrouvera sa liberté après avoir triomphé de tous les niveaux à environnements clos reliés par des ascenseurs.
+
+\subsubsection{La barre d'énergie}
+
+La barre d'énergie aura pour but de symboliser et d'indiquer le niveau d'énergie du personnage. Ce niveau d'énergie représente en fait sa capacité à utiliser son pouvoir de ralentissement du temps ou « slow motion ». Cette idée nous est venu en réalisant que le gameplay du jeu serait gâché par l'utilisation abusive d'un slow motion illimité. La capacité à ralentir le temps est donc limitée à 10 secondes à partir d'une charge pleine. L'énergie ne se régénère que lorsque le pouvoir slow motion est inactif obligeant ainsi le joueur à n'utiliser ce pouvoir qu'à certains moments stratégiques.\\
+J'étais en charge de la représentation graphique sur l'écran de la barre d'énergie. J'avais en même temps pour objectif de modifier l'affichage de la barre de vie qui était temporairement en 3D pour être compatible avec l'oculus rift, celui-ci n'étant pas compatible avec la GUI 2D d'Unity. Il s'est en fait avéré que la GUI 2D de l'oculus en plus d'être extrêmement complexe et contraignante ne donnerait pas forcément un meilleur affichage. J'ai donc choisis de rester sur le choix technique d'un affichage obtenu à l'aide d'un objet 3D.\\
+Les deux barres ayant un fonctionnement extrêmement proche j'ai décidé de dupliquer la barre de vie et de ne faire que des modifications mineures sur le matériel et son shader. La barre de vie passe ainsi du bleu au rouge en passant par le violet au lieu du vert vers rouge de la barre de vie. Nous avons ensuite relié la barre de vie au script du slow motion pour lui donner vie.
+
+\newpage
+
+\section{Objectifs pour la troisième soutenance}
+
+\subsection{Le boss final}
+
+Le boss final est l'ennemi qui devra être le plus difficile à battre par le joueur. C'est pour cette raison que nous avons décidé de réaliser une intelligence artificielle spécifique au boss, pour que celle-ci soit assez complètes nous avons préféré réaliser le boss pour la troisième soutenance. Ce boss aura déjà une barre de vie accrue, il ne suffira pas de seulement quelques shurikens pour l'abattre. Le boss disposera de plusieurs attaques différentes que le joueur devra esquiver : sa première attaque consiste à frapper lourdement avec ses deux épées géantes contre le sol, le joueur devra les éviter, le boss pourra aussi lancer des rayons lasers grâce à ses yeux, enfin il pourra invoquer des samouraïs et des tourelles. Le joueur devra utiliser le slow motion pour éviter de mourir.\\
+Pour battre le boss, le joueur ne devra pas seulement éviter les différentes attaques que le boss aura à sa disposition mais devra effectuer une séquence d'attaque pour vaincre le boss. Le joueur devra lancer des shurikens à des endroits spécifiques puis une animation se déclenchera, ainsi le joueur aura une temps imparti pour effectuer le coup de grâce au boss. Le boss disposera d'une intelligence artificielle similaire a ceux des ennemis , mais celui-ci verra constamment le joueur, il sera seulement lent a effectuer ces attaques donnant la possibilité au joueur de les esquiver. Pour faire en sorte que les attaques du boss soit bien coordonnées nous utiliseront le module animator de unity.    
+
+\subsection{Nouveaux niveaux}
+
+La qualité de notre jeu repose sur son gameplay mais aussi sur la qualité de son contenu en premier lieu duquel se trouvent les niveaux. La conception de nouveaux niveaux à chaque soutenance nous semblent donc indispensable. La prochaine soutenance aura pour principale avancée le mode multijoueur. Nous avons donc décidé de créer un niveau spécifiquement dédié au mode multijoueur. Celui-ci permettra à deux joueurs de disputer une partie, l'un deux prendra le rôle du ninja, le second sera le maître des lieux et pourra activer et désactiver plusieurs éléments sur la carte pour bloquer le joueur à certains endroits ou lui tendre des pièges. Cette nouvelle carte sera spécialement désigné pour permettre une interaction intelligente entre les joueurs.\\
+
+En fonction du temps qu'il nous restera nous pourront éventuellement créer une autre carte pour le mode solo qui nous permettra de compléter le jeu qui pour l'instant est assez court. Ce nouveau niveau sera un intermédiaire entre le niveau 1 et le dernier niveau. Nous essayerons de nous appliquer dans un travail ambitieux de réalisation graphique pour rendre ce niveau graphiquement esthétique mais aussi autant que possible vivant et interactif.
+
+\subsection{Interface}
+
+Nous allons créer une interface qui s'affichera au début du jeu pour définir un pseudo. Il servira à établir des scores qui seront mis en ligne sur le site internet et à indiquer le pseudo des joueurs lors d'une partie en ligne. Nous ferons aussi un écran de game over et un écran en cas de victoire contre le boss final.\\
+Si nous en auront le temps, nous envisageons de compléter le menu de pause pour lui donner une intégration plus complète au jeu notamment pour permettre au joueur de configurer plusieurs paramètres du jeu.
+
+\subsection{Multijoueur}
+
+Le multijoueur nous pose un problème assez contraignant, à cause de l'oculus. En effet, pour jouer avec l'Oculus en multijoueur, il nous faudrait 2 oculus, ce que nous n'avons pas. Nous avons alors réfléchi à des moyens de contourner ce problème.\\
+La première idée que nous avions eu, très évidente, était de faire une version sans Oculus, ainsi un joueur pourrait jouer avec l'Oculus, et le second sans. Mais cette idée, bien que facile, gâche en quelque sorte le gameplay de notre
+jeu, qui est basée sur l'Oculus. Nous avons donc réfléchi à d'autres solutions, ne nécessitant pas de créer une version de jeu sans Oculus.\\
+Finalement, nous avons eu une idée de multijoueur originale. Le premier joueur, avec l'Oculus, doit contrôler le ninja, et essayer de rester en vie le plus longtemps possible, dans une salle. Le second joueur doit contrôler la salle afin de tuer le joueur. Pour cela, il peut spawn des ennemis, des arbalètes, lancer des flèches, bouger des murs.
+
+\subsection{Site web}
+
+Il reste encore de nombreuses améliorations à apporter au site web, permettant non seulement de présenter mais le jeu, mais aussi d'apporter une meilleure expérience de jeu aux joueurs. Pour l'instant, seul les temps sont enregistrés, mais il est impossible d'entrer son pseudo.\\
+Pour la troisième soutenance, il sera possible de se créer un compte sur le site, puis on pourra se connecter avec, sur le site web et dans le jeu, afin de pouvoir sauvegarder nos scores, notre avancée dans le jeu, nos statistiques.\\
+De plus il y aura aussi un chat, accessible depuis le site web, permettant aux personnes connectés de se parler, mais aussi aux visiteurs. Ce chat permettra à tous les joueurs de discuter entre eux, mais aussi de donner leur avis sur le jeu par example.\\
+La connection permettra aussi d'accéder au mode multijoueur, et ainsi de faire un classement des joueurs.\\
+
+Le site web permettra aussi de télécharger un installateur du jeu pour différents systèmes d'exploitation : Windows et Mac.
+
+
+\end{document}
