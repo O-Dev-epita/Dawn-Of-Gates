@@ -1,3 +1,12 @@
+<?php
+
+	session_start();
+
+	if(!isset($_POST['game']))
+	{
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -36,6 +45,22 @@
 								<li><a href="index.php?page=downloads">Téléchargements</a></li>
 								<li><a href="index.php?page=presentation">Présentation</a></li>
 								<li><a href="index.php?page=links">Liens</a></li>
+
+								<?php
+
+									if(isset($_SESSION["pseudo"]))
+									{
+										echo "<li>Connecté (" . $_SESSION["pseudo"] . ")</li>";
+										echo '<li><a href="index.php?page=signout">Déconnection</a></li>';
+									}
+									else
+									{
+										echo '<li><a href="index.php?page=signin">Connection</a></li>';
+										echo '<li><a href="index.php?page=signup">Inscription</a></li>';
+									}
+
+								?>
+
 							</ul>
 						</nav>
 
@@ -43,6 +68,8 @@
 			</div>
 
 			<?php
+
+				}
 
 				if(!isset($_GET['page']))
 				{
@@ -67,11 +94,26 @@
 					{
 						include('links.php');
 					}
+					else if($page == 'signout')
+					{
+						include("members/signout.php");
+					}
+					else if($page == 'signin')
+					{
+						include("members/signin.php");
+					}
+					else if($page == 'signup')
+					{
+						include("members/signup.php");
+					}
 					else
 					{
 						include('error.php');
 					}
 				}
+
+				if(!isset($_POST['game']))
+				{
 
 			?>
 
@@ -87,3 +129,9 @@
 
 	</body>
 </html>
+
+<?php
+
+}
+
+?>
