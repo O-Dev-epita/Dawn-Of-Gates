@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System;
 
 public class Connection : MonoBehaviour {
 
-	void Start () {
+	public Text pseudoText;
+	public Text passwordText;
+	public GetUsers script;
+
+	public void OnClick() {
 		
-		string url = "http://localhost:8888/dog/index.php?page=signin";
+		string url = "http://localhost/index.php?page=signin";
 		
-		string user = "test";
-		string password = "ab";
+		string user = pseudoText.text;
+		string password = passwordText.text;
 		
 		PostRequest req = new PostRequest(url);
 		req.addData("pseudo", user);
@@ -21,6 +26,7 @@ public class Connection : MonoBehaviour {
 			if(id != -1)
 			{
 				Debug.Log("Connection succeful : " + id);
+				script.Init(user);
 			}
 			else
 			{
@@ -32,7 +38,5 @@ public class Connection : MonoBehaviour {
 			Debug.Log("Server error");
 		}
 		
-		
-	
 	}
 }

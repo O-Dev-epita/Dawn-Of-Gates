@@ -1,11 +1,9 @@
 <?php
 
-	session_start();
-
 	if(isset($_POST['pseudo']) && isset($_POST['pass']))
 	{
 
-		$bdd = new PDO('mysql:host=localhost;dbname=dog;charset=utf8', 'root', 'root');
+		$bdd = new PDO('mysql:host=localhost;dbname=dog;charset=utf8', 'root', '');
 
 		$req = $bdd->prepare('SELECT id FROM accounts WHERE pseudo = ? AND password = ?');
 		$req->execute(array($_POST['pseudo'], $_POST['pass']));
@@ -17,6 +15,16 @@
 			if(isset($_POST['game']))
 			{
 				echo $data['id'];
+
+				$req = $bdd->prepare('INSERT INTO connections(player, ip, date) VALUES(?, ?, ?)');
+				$req->execute(array(
+					$_POST['pseudo'],
+					$_SERVER['REMOTE_ADDR'],
+					time()
+				));
+
+
+
 			}
 			else
 			{

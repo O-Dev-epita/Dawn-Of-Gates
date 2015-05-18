@@ -1,13 +1,9 @@
 <?php
 
-	session_start();
-
 	if(isset($_POST['pseudo']) && isset($_POST['pass1']) && isset($_POST['pass2']))
 	{
 
-		$bdd = new PDO('mysql:host=localhost;dbname=dog;charset=utf8', 'root', 'root');
-
-		$bdd = new PDO('mysql:host=localhost;dbname=dog;charset=utf8', 'root', 'root');
+		$bdd = new PDO('mysql:host=localhost;dbname=dog;charset=utf8', 'root', '');
 
 		$req = $bdd->prepare('SELECT id FROM accounts WHERE pseudo = ?');
 		$req->execute(array($_POST['pseudo']));
@@ -17,7 +13,7 @@
 		if($data)
 		{
 			$error = "This pseudo already exists";
-			if($_POST['game'])
+			if(isset($_POST['game']))
 			{
 				echo $error;
 			}
@@ -37,7 +33,7 @@
 				'type' => 0
 			));
 
-			if($_POST['game'])
+			if(isset($_POST['game']))
 			{
 				echo 'Ok';
 			}
