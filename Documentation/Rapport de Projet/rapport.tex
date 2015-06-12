@@ -32,7 +32,7 @@
 		\large \textsc 0\_Dev Team\\
 		\textsc{Lariau} Steven (lariau\_s) \\
 		\textsc{Brenet} Timothée (brenet\_t)\\
-		\textsc{Lafargue} Victor (lafargue\_b)\\
+		\textsc{Lafargue} Victor (lafarg\_b)\\
 
 		\includegraphics[scale=0.45]{logo2.png}
 		
@@ -45,9 +45,16 @@
 
 \section*{Remerciements}
 
-De nombreuses personnes nous ont apportés de l'aide dans lans la réalisation de notre projet, sans la communité du forum d'unity pour le jeu et de stack overflow pour le c\# en général et le site nous n'aurions pu faire face à tous les problèmes rencontrés lors du développement.\\
+De nombreuses personnes nous ont apportés de l'aide dans la la réalisation de notre projet, sans la communité du forum d'unity pour le jeu et de stack overflow pour le c\# en général et le site nous n'aurions pu faire face à tous les problèmes rencontrés lors du développement.\\
 Nous tenons aussi à remercier HTML5Up, le site web sur lequel nous avons été cherché le template css pour notre site web.
 
+\newpage
+
+\section*{Introduction}
+
+Nous sommes trois, Steven, Lariau Timothée Brenet, et Victor Lafargue, à avoir travailler sur notre projet, intitulé Dawn of Gates.\\
+C'est un jeu en réalité virtuelle, développé avec et pour l'Oculus Rift.\\
+De type action, le personnage principal met en scène un ninja, dans un environnement fermé, ayant des capacités hors du commun.
 
 \newpage
 
@@ -56,11 +63,13 @@ Nous tenons aussi à remercier HTML5Up, le site web sur lequel nous avons été che
 
 \newpage
 
-\section{Introduction}
+\section{Présentation du projet}
 
-\subsection{Origine}
+\subsection{Un jeu en réalité virtuelle}
 
-Notre projet, intitulé Dawn of Gates, est un jeu en réalité virtuelle, développé avec et pour l'Oculus Rift.\\
+Dawn of Gates est un jeu en réalité virtuelle, cela signifie que le joueur ne se contente pas seulement de jouer devant son écran, il est réellement émergé dans le jeu. Il met un casque sur sa tête, possédant deux écran, un pour chaque oeil, ayant pour but de faire croire au joueur que celui-ci est réellement dans le jeu.\\
+Il existe plusieurs modèles de casques de réalité virtuelle, mais nous avons choisi Oculus Rift, car celui-ci est l'un des pionniers dans la réalisation d'un casque de jeu en réalité virtuelle pour grand public. Bien qu'il ne soit pas encore sortie en version définitive, la version développement est déjà assez stable, et de plus une assez grande communauté est présente sur Internet pour nous aider en cas de problèmes.\\
+L'Oculus Rift n'est pas une console de jeu, à lui tout seul il ne permet pas de joueur à des jeux en réalité augmenté. C'est un accessoire, il se branche à un ordinateur afin de pouvoir fonctionner. Afin de développer des jeux Oculus, les créateurs ont mis à notre disposition, gratuitement, un SDK, permettant de réaliser des applications pc ou mobiles. Le site web propose en plus des versions de ce sdk s'intégrant aux moteurs de jeu Unreal Engine et Unity. C'est ce dernier que nous avons choisi, afin de pouvoir réaliser notre jeu en réalité virtuelle sur Unity.
 Nous avons choisi cette plateforme afin de ne pas se contenter d'un jeu 3D banal. Le développement d'un jeu 3D oculus demande certes plus de travail, et se révèle plus difficile, mais au final nous sommes bénéficiaires, car les difficultés rencontrés nous forment et nous rendent meilleurs.
 
 \subsection{L'histoire}
@@ -199,15 +208,18 @@ Réseau & 0 & 50 & 50 & 100\\
 
 \subsection{Les portails}
 
-Les portails sont une des features les plus importantes du jeu, mais aussi l'une des plus complexes à réaliser. J'ai fait de nombreuses tentatives et de nombreux échecs avant d'arriver à une solution fonctionnelle et viable.
+L'utilisation de portails est l'une des fonctionnalités les plus importantes du jeu, mais aussi l'une des plus complexes à réaliser. J'ai fait de nombreuses tentatives et de nombreux échecs avant d'arriver à une solution fonctionnelle et viable. Cette partie du développement, fut, pour ma part, l'une des plus difficiles à réaliser, j'y ai passé beaucoup de temps, mais je ne me suis jamais découragé, et j'ai finalement eu, un résultat, qui n'était certes pas parfait, mais du moins à la hauteur de nos espérances.\\
+Les portails permettent à notre personnage de se déplacer plus rapidement, et de franchir des obstacles qui ne pourraient pas l'être en se déplaçant normalement. Le ninja possède deux portails, qu'il peut ouvrir sur n'importe qu'elle surface. Lorsque deux portails sont placés, le personnage, peut alors se déplacer du premier portail au second, et inversement, en rentrant dans l'un des portails.
 
 \subsubsection{Ouverture et placement}
 
-Un portail est sensé s'ouvrir lorsqu'un shuriken lancé par le portail touche un mur. De plus, si il n'y a qu'un seul portail placé, celui-ci reste fermé. Ce n'est que lorsque les deux portails sont placés qu'ils s'ouvrent. Le click de la souris détermine quel portail est lancé. Le click gauche correspond à un portail gauche, et le click droit à un portail droit.\\
+Un portail est sensé s'ouvrir lorsqu'un shuriken lancé par le ninja touche un mur. De plus, si il n'y a qu'un seul portail placé, celui-ci reste fermé. Ce n'est que lorsque les deux portails sont placés qu'ils s'ouvrent. Le clic de la souris détermine quel portail est lancé. Le clic gauche correspond à un portail gauche, et le clic droit à un portail droit.\\
 
 Pour cela, lorsque le shuriken est lancé, un raycast est réalisé afin de savoir quel objet le shuriken va rencontrer. Le script de placement ne commencera que si la cible est un mur. Pour détecter si c'est un mur ou non, j'ai mis un Tag nommé "room" sur toute la pièce. Je n'ai plus qu'à vérifier si le tag de l'object trouvé par le raycast est bien "room". Si c'est le cas, je calcule la distance entre le shuriken et le mur, et lorsque le shuriken a parcouru cette distance, le portail est placé à l'endroit où se trouve le shuriken, et le shuriken est détruit.\\
 Le raycast me donne aussi le vecteur de la face touchée. J'utilise ce vecteur afin que le portail soit bien posée à plat, quelle que soit la face du mur, du sol ou du plafond.\\
-Une fois le portail placé, je vérifie si l'autre portail est ouvert. Si c'est le cas, l'animation d'ouverture est lancée. Sinon, elle est lancée sur les deux portails, uniquement lorsque les deux sont placés.
+
+Ensuite viens le problème d'ouverture des portails. Les portails ne sont ouverts uniquement que si les deux portails sont placés.\\
+Par défaut, lorsqu'un portail est placé, celui-ci est fermé. Si l'autre portail est ouvert, alors cela signifie que les deux portails sont placés, et l'animation du portail est lancée. Si le portail est placé mais fermé, cela signifie que c'est la première que les deux portails sont placés, et dans ce cas l'animation d'ouverture est activée sur les deux portails. Enfin, si l'autre portail n'a pas encore été lancé, alors celui-ci reste fermée.
 
 \subsubsection{L'effet portal}
 
@@ -215,46 +227,103 @@ L'effet portal, c'est que lorsque le joueur regarde un portail, il voit à traver
 Ma première idée était tout d'abord de réussir à faire un simple miroir. J'espérais ensuite pouvoir l'adapter aux portails, le premier portail serait un miroir du second, et inversement. J'ai trouvé sur internet un tutoriel expliquant comment faire un miroir avec un script et un shader, mais celui-ci était très complexe, et je n'ai pas réussi à bien le comprendre pour pouvoir l'adapter à mon problème.\\
 
 Finalement, en cherchant sur les forums, j'ai trouvé une solution beaucoup plus simple : les texture renderer. Ils permettent de sauvegarder tout ce qu'enregistre une caméra. Je n'ai alors plus qu'à placer une caméra sur chaque portail. Le portail de gauche à un matériel possédant la texture renderer sauvegardé par la caméra du portail de droite, et inversement. Ainsi j'obtiens l'effet désiré.\\
+Les textures renderer ont une certaine résolution, plus celle-ci est élevée, plus l'image serra de meilleure qualiité, mais le jeu demandera alors plus de ressources. J'ai donc du faire un compromis entre qualité et performance, mais les portais restent tout de même réalistes.
 
-Bien que le résultat final est très simple et court à implémenter, il m'a fallu beaucoup de temps de recherches et de réflexions, ainsi que de faux pas, avant d'arriver à cette solution. 
+Bien que le résultat final est très simple et court à implémenter, il m'a fallu beaucoup de temps de recherches et de réflexions, ainsi que de faux pas, avant d'arriver à cette solution. Dans cette situation, mes connaissances en programmation ne m'ont pas réellement servi, c'est surtout la recherche et la connaissance des fonctionnalités d'Unity qui a fait la différence.
 
 \subsubsection{La téléportation}
 
 La téléportation décuple les possibilités de déplacement du personnage. Elle permet d'ajouter un gameplay intéressant pour les différents niveaux du jeu. Le principe de la téléportation est que le joueur rentre dans un portail, il ressort par un autre portail. La aussi j'ai pas mal réfléchi avant d'arriver à l'implémentation finale. Tout d'abord, j'ai pensé à dédoubler le personnage lorsqu'il commençait à rentrer dans un portail. Son double étant en train de sortir de l'autre portail. Mais cette solution était bien trop compliquée à implémenter et aurait complexifié tous les autres scripts du personnage.\\
 Finalement j'ai opté pour une solution plus simple, lorsque le ninja rendre dans le portail, il ressort immédiatement par l'autre portail, avec l'orientation adéquate.\\
-Pour cela, chaque portail possède un box collider. Lorsque le ninja rentre en collision avec le box collider d'un portail, il est téléporté à la même position et la même rotation que l'autre portail. Malheureusement, cela ne fonctionnait pas, car une fois le ninja téléporté, il déclenchait alors le box collider de l'autre portail, et se retéléportait, et ceci indéfiniment. Pour régler le problème, le personnage avance automatiquement tout droit afin de sortir du collider.
+Pour cela, chaque portail possède un box collider. Lorsque le ninja rentre en collision avec le box collider d'un portail, il est téléporté à la même position et la même rotation que l'autre portail. Malheureusement, cela ne fonctionnait pas, car une fois le ninja téléporté, il déclenchait alors le box collider de l'autre portail, et se retéléportait, et ceci indéfiniment. Pour régler le problème, le personnage avance automatiquement tout droit afin de sortir du collider.\\
+
+L'implémentation de la téléportation fut assez laborieuse, de nombreux essais furent réalisés avant d'arriver à ce résultat, notamment au niveau de l'orientation et de la position du personnage, afin d'éviter que le personnage sorte dans le sens opposé par exemple, et d'éviter les cas de téléportation infini. Néanmoins certains cas subsistent, comme le placement d'un portail au sol, ainsi qu'un autre au plafond, juste au-dessus du premier, mais le joueur peut toujours s'en sortir en se déplaceant pendant la chute.
 
 \subsection{Le slow motion}
 
 Le slow motion, c'est la capacité du ninja à ralentir le temps. Lorsque cela le produit, la vitesse de tous les objects et de tous les ennemis est considérablement ralenti. Seule la vitesse du joueur reste la même.\\
 Pour cela j'utilise une variable de "temps", un float, qui par défaut est à 1. Tous les objets influencés par le slow motion ont leur vitesse multiplié par ce nombre. Lorsque le slow motion est activé, la valeur de cette variable change. Pour ralentir le temps par n, il suffit de mettre la variable à 1/n. Ainsi, la vitesse de tous les objects affectés par le slow motion est divisée par n. Une fois le slow motion désactivée, la variable revient à 1.\\
+L'implémentation du slow motion en elle-même a été assez courte, mais avant cela, il a fallu se concerter, afin de savoir s'il fallait limiter l'utilisation du slow motion ou pas. De plus, le choix du taux de ralentisement a aussi un impact important sur notre jeu. Un taux trop faible l'aurait rendu peu utile, alors qu'un taux trop élevé aurait rendu le jeu ennuyeux. J'ai donc essayé de nombreuses fois le slow motion, avec des taux différents, afin de choisir celui qui me paraissait le plus approprié.\\
 
-Pour activer et désactiver le slow motion, il suffit d'appuyer sur la touche espace. Afin d'ajouter du gameplay, nous avons préféré l'imiter l'utilisation du slow motion. Le ninja a une certaine quantités d'énergie, qui diminue lorsque le slow motion est activé, et qui augmente lorsque le slow motion est désactivé. L'activation du slow motion si le personnage n'a plus d'énergie. Cela permet au joueur d'éviter certains ennemis ou projectiles en activant le slow motion, et grâce à la limite d'utilisation, il ne peut pas l'utiliser en permanence, et doit donc s'en servir à bon escient.
+Pour activer et désactiver le slow motion, il suffit d'appuyer sur la touche espace. Afin d'ajouter du gameplay, nous avons préféré limiter l'utilisation du slow motion. Le ninja a une certaine quantités d'énergie, qui diminue lorsque le slow motion est activé, et qui augmente lorsque le slow motion est désactivé. L'activation du slow motion si le personnage n'a plus d'énergie. Cela permet au joueur d'éviter certains ennemis ou projectiles en activant le slow motion, et grâce à la limite d'utilisation, il ne peut pas l'utiliser en permanence, et doit donc s'en servir à bon escient.
 
 \subsection{La vie}
 
-Le joueur possède une certaine quantités de vie, qui diminue lorsqu'il ennemi l'attaque. Il meurt lorsqu'il n'a plus de vie.
+Le joueur possède une certaine quantités de vie, qui diminue lorsqu'un ennemi l'attaque. Il meurt lorsqu'il n'a plus de vie.
 
 \section{Fonctionnement des niveaux}
 
+\subsection{L'audio}
+
+La difficulté de la partie audio ne réside pas dans l'intégration des sons aux jeux, mais dans les choix de ceux-ci. Pour la musique de fond de notre jeu, nous devons trouver une musique de style asiatique, correspondent bien à l'ambiance du jeu. Après plusieurs recherches, j'en ai trouvé une faisant l'affaire.\\
+Pour l'intégrer à Unity, je me suis servi tout d'abord de la camera comme audio listener, il permet d'entendre les sons. De plus, plus un objet produisant du son est éloigné de l'audio listener, plus le son résultant sera faible, et inversement. Ainsi, plus un objet est près du ninja, plus il produira un bruit fort, ce qui est l'effet voulu.\\
+La caméra a en plus une audio source, qui est le fichier son de la musique de fond, ainsi, elle a en permanence la même intensité sonore.\\
+
+La musique de fond n'est qu'une petite partie de l'audio de notre jeu. Bien qu'elle contribue fortement  à l'ambiance, cela ne suffit pas. Il faut rajouter en plus des bruitages, lorsque le joueur lance un shuriken, que l'ennemi utilise son épée, qu'un portail s'ouvre, qu'un personnage ou un ennemi est touché. Plus ou moins toutes les interactions avec le jeu nécessiterait des bruitages, afin de permettre une meilleure immersion dans le jeu. L'implémentation des sons n'est pas très difficile à réaliser, il suffit de mettre une source audio sur les objets concernés, puis il est ensuite possible de joueur, mettre en pause, ou arrêter la source audio depuis le script.\\
+La difficulté réside dans le choix même des bruitages. Il faut aller sur un site web proposant des bruitages libres et gratuits, et en trouver qui correspondent bien à ce que nous voulons, mais aussi à notre style de jeu, c'est à dire un style asiatique, afin de plonger le joueur dans l'ambiance des différents niveaux.
+
 \subsection{Transition entre les différents niveaux}
 
-Afin de passer entre les niveaux différents, qui correspondent à différents étages du bâtiment, le personnage utilise des ascenseurs. Il en existent de deux types : les ascenseurs de début de niveau, et les ascenseurs de fin de niveau. Chaque niveau possède les deux types d'ascenseurs, excepté le premier et le dernier niveau.\\
+Nous avons longuement réfléchi à comment passer d'un niveau à un autre. La première idée était de mettre une porte menant à des escaliers, qui permettrait d'accéder au niveau suivant. Finalement, nous avons décidé d'utiliser une toute autre approche.\\
+Afin de passer entre les niveaux différents, qui correspondent à différents étages du bâtiment, le personnage utilise des ascenseurs.  Il en existent de deux types : les ascenseurs de début de niveau, et les ascenseurs de fin de niveau. Chaque niveau possède les deux types d'ascenseurs, excepté le premier et le dernier niveau.\\
+Ces ascenseurs sont placés dans des endroits stratégiques. En début de niveau, ils sont toujours assez éloigné des premiers ennemis, afin d'éviter que le joueur se fasse attaqué à peine sorti de l'ascenseur. Quand à l'autre ascenseur, il est placé à l'opposé du niveau, dans un endroit aussi dénudé d'ennemis, montrant bien que le niveau est terminé.\\
 Le joueur commence dans l'ascenseur de début de niveau. Celui est fermé, puis s'ouvre automatiquement après quelques secondes, permettant au joueur de découvrir le niveau.\\
 L'ascenseur de fin de niveau est ouvert et possède un box collider. Lorsque le joueur le déclenche, les portes se referment après quelques secondes. Le niveau suivant est alors chargé.
+
+\subsection{Sauvegarde des scores}
+
+A chaque fois que le joueur termine un niveau, une requête HTTP est envoyée au serveur afin de sauvegarder le temps réalisé par le joueur. Pour cela, le timestamp est sauvegardé lorsque le niveau commence, puis le timestamp est de nouveau récupéré lorsque le niveau se termine, afin de savoir la durée en secondes. Cette durée est envoyée au serveur par une requête HTTP, avec en plus le numéro du niveau correspondant. Si le joueur est hors ligne, ou que le serveur ne peut être atteint pour tout autre raison, le temps n'est tout simplement pas sauvegardé.\\
+
+Depuis l'utilisation de MySQL, le pseudo du joueur est aussi sauvegardé. Cela signifie que maintenant seul les joueurs connectés peuvent envoyer leur score au serveur, afin d'apparaître sur les classements avec son pseudo.\\
+La requête effectuée n'est donc uniquement effectuée que si le joueur est connecté, et une nouvelle information est envoyée afin d'identifier le joueur, l'index de son pseudo.
+Cela permet au serveur de connaître les meilleurs temps ainsi que les pseudos des joueurs qui les ont réalisés.
+
+\section{Les différents niveaux}
+
+\subsection{Le premier niveau}
+
+\subsection{Le second niveau}
+
+\subsection{Le niveau final}
+
+\subsubsection{Scripts dédiés au niveau}
+
+Je me suis occupé des scripts permettant d'implémenter les spécificités du dernier niveau.\\
+Pour les dalles, le but était qu'une fois que le personnage aura activé les deux dalles, alors la porte de la salle du boss final s'ouvrira.\\
+Pour ce faire, j'ai mis un box collider sur chacune des dalles, lorsque celui est déclenché, l'état de la dalle, inactif par défaut, devient actif, et l'état de l'autre dalle est vérifiée. Si elle est, elle aussi, active, l'animation d'ouverture des portes de la salle du boss se déclenche.\\
+
+J'ai aussi géré les scripts pour la salle de gauche, avec les arbalètes et le slow motion. Tout d'abord, les arbalètes se comportent différemment des premières rencontrées, celles-ci se contentent de tirer tout droit et ne visent pas le joueur. De plus elles tirent uniquement lorsque le joueur est à l'intérieur de la salle et lorsque la dalle n'est pas encore activée.\\
+Pour mettre en place ces arbalètes, j'ai refait au nouveau script, différent du script de base pour les arbalètes. Celui-ci est bien moins complexe, et se contente d'utiliser un timer afin de créer des flèches et leur donner la même orientation que l'arbalète, afin que celles-ci aient une trajectoire rectiligne.\\
+De plus, je mets un box collider sur la salle, ainsi qu'un script, qui active le script des arbalètes lorsque le joueur déclenche le collider, si la dalle n'a pas encore été déclenchée, et qui le désactive lorsque lorsque le joueur quitte le collider ou lorsque la dalle est déclenchée.
+
+\section{L'interface}
+
+\subsection{Le Menu principal}
+
+\subsection{Le Menu multijoueur}
+
+\subsubsection{Connexion}
+
+
+Le menu de connexion est réalisé à l'aide de la nouvelle fonctionnalités d'Unity 4.6 : les canvas 2D. De nouveaux gameobjects ont été implantés, permettant de faire bien plus facilement une interface 2D, sans avoir à utiliser des plans 3D et à placer la caméra au bon endroit pour avoir une impression de menu 2D.\\
+Le menu contient deux champs de texte, un pour le nom de compte, et un autre pour le mot de passe. De plus, il contient aussi un bouton connexion, une fois que le joueur a rentré ses identifiants, il clique sur ce bouton. Une requête HTTP est alors envoyée au serveur, contenant les identifiants de connexion. Si les identifiants sont exacts, le serveur renverra l'index du joueur, qui est utilité pour de futures requêtes avec le serveur, et le joueur passe ensuite au menu suivant. Si les identifiants sont incorrects, le serveur renvoie -1, et un message d'erreur s'affiche alors, demandant au joueur de réessayer.\\
+
+
+\subsubsection{Choix de la partie}
 
 \section{Le Site Web}
 
 \subsection{Buts}
 
-La Site web présente notre site web. Il doit être beau, simple et épuré, afin de donner envie aux joueurs de joueur notre jeu. Il sert aussi à présenter l''équipe le jeu, et permet de télécharger le cahier des charges, le rapport, ainsi que notre jeu bien entendu.\\
-Il possède aussi des fonctionnalités dédiés aux joueurs, il est possible de s'inscrire pour se connecter sur le site web et en jeu. Il est aussi possible de voir les performances des autres joueurs.
+La Site web présente notre projet. Il se doit d'être beau esthétiquement, simple et épuré, afin de donner envie aux joueurs de jouer à notre jeu. Il sert aussi à présenter notre équipe de développement, et permet de télécharger le cahier des charges, le rapport, ainsi que notre jeu bien entendu.\\
+Il possède aussi des fonctionnalités dédiés aux joueurs, il est possible de s'inscrire pour se connecter sur le site web et en jeu. Il est aussi possible de voir les performances des autres joueurs.\\
+Il permet aussi en grande partie au jeu de fonctionner, notamment avec le multijoueur qui nécessite de communiquer avec le serveur, ainsi qu'avec le système de connexion dans le jeu afin de pouvoir sauvegarder les classements sur le serveur.
 
 \subsection{Base du site}
 
-Tout d'abord, je suis partit sur un site web statique, c'est à dire ne comportant que des fichiers HTML, CSS et javascript. Afin d'avoir un beau design, j'ai décidé d'utilise un templates CSS. Un autre avantage des templates est qu'ils s'adaptent automatiquement à toutes les résolutions, tous les navigateurs et tous les appareils. J'en ai trouvé un qui me convenait sur le site HTML5 Up. Toutes les pages web du site ont le même menu, la même en-tête et le même bas de page, seul le corps du document varie.\\
+Tout d'abord, je suis partit sur un site web statique, c'est à dire ne comportant que des fichiers HTML, CSS et javascript. Afin d'avoir un beau design, j'ai décidé d'utilisé un modèle CSS. Un autre avantage des modèles est qu'ils s'adaptent automatiquement à toutes les résolutions, tous les navigateurs et tous les appareils. J'en ai trouvé un qui me convenait sur le site HTML5 Up. Toutes les pages web du site ont le même menu, la même en-tête et le même bas de page, seul le corps du document varie.\\
 
-Ensuite, j'ai décidé de partir sur un site dynamique, indispensable pour l'interaction avec les visiteurs du site. Pour cela, j'ai choisi d'utiliser PHP, et j'ai dévelopé le site web avec XAMP, un suite logistiques regroupant tous les programmes nécessaires pour faire tourner un serveur local.\\
+Ensuite, j'ai décidé de partir sur un site dynamique, indispensable pour l'interaction avec les visiteurs du site. Pour cela, j'ai choisi d'utiliser PHP, et j'ai développé le site web avec XAMP, un suite logistiques regroupant tous les programmes nécessaires pour faire tourner un serveur local.\\
 Ce changement m'a permis tout d'abord de modifier la structure de mon site, au lieu recopier le même code de base dans chaque page HTML, j'ai fait une seule page PHP regroupant tout ce code. Ensuite toutes les autres pages HTML sont remplacés par des pages PHP ne contenant que le corps du document. Grâce à l'instruction PHP include, ces pages peuvent ainsi être incluses dans la page de base, selon l'url.\\
 Finalement, j'ai aussi fait le choix d'utiliser MySQL, une base de donnée, qui me permet de stocker les informations des différents membres, et de les récupérer, tout cela avec du code PHP.
 
@@ -268,6 +337,17 @@ Note site web contient différentes pages web statiques,  accessible sans restric
 \item Présentation : Présente notre projet, ainsi que les différents membres de l'équipe
 \item Liens : Une liste de liens vers les différents site web, logiciels et ressources externes utilités pour notre projet
 \end{itemize}
+
+A cela s'ajoute les pages web dynamiques, certaines nécessitant d'être connecté afin de pouvoir les afficher :
+
+\begin{itemize}
+\item Ccores : affiche les performances des joueurs.
+\item Inscription : permet de s'inscrire sur le site et le jeu.
+\item Connexion : permet de se connecter avec ses identifiants personnels.
+\item Déconnexion : permet aux visiteurs connectés de se déconnecter.
+\end{itemize}
+
+Sur chaque page web, se situe un menu, juste en-dessous du titre de notre projet. Il contient des liens permettant d'accéder à ces différents pages.
 
 \subsection{Les scores}
 
@@ -288,13 +368,48 @@ Je me sers aussi de MySQL pour stocker les informations des différents membres. 
 \item Déconnection : Cette page se contente uniquement de déconnecter le visiteur. Un message de confirmation est affichée avant que l'utilisateur soit redirigé vers la page d'accueil.
 \end{itemize}
 
+L'état du visiteur (connecté ou pas), est affiché en permanence dans le menu. Pour cela, j'utilise des sessions, ce sont des variables PHP qui restent après avoir changé de page. Elles peuvent être effacées manuellement, c'est ce qui arrive lorsque le visiteur va sur la page de déconnection. Ou sinon elles s'effacement automatiquement après une certaine durée d'inactivité.\\
 
+Lorsque le joueur se connecte depuis le jeu, il effectue des requêtes HTTP sur les mêmes pages, mais le serveur détecte que ce n'est pas un navigateur mais le jeu, grâce à une donnée envoyée en plus par le jeu : une variable game. Le serveur, au lieu de renvoyer une page HTML entière, renvoie soit l'id du compte si la connexion à réussie, sinon -1.
 
-L'état du visiteur (connecté ou pas), est affiché en permanence dans le menu. Pour cela, j'utilise des sessions, ce sont des variables PHP qui restent après avoir changé de page. Elles peuvent être effacées manuellement, c'est ce qui arrive lorsque le visiteur va sur la page de déconnection. Ou sinon elles s'effacement automatiquement après une certaine durée d'inactivitée.
+\subsection{Implémentation du multijoueur côté serveur}
 
+Pour permettre l'utilisation du multijoueur, d'autres pages PHP ont aussi été ajoutées, mais celle-ci ne sont jamais utilisées par un visiteur du site web, elles sont réservées pour le jeu.\\
+Afin que plusieurs joueurs puissent jouer,  ils doivent tout d'abord être tous les deux connectés bien entendu, mais aussi connectés entre eux. Pour cela, j'ai rajouté une table mysql retenant les joueurs connectés au jeu ainsi que leur adresse ip. Ainsi, lorsqu'un joueur se connecte depuis le jeu, une entrée est rajoutée à cette table, avec son pseudo et son adresse ip.\\
+Ensuite, le jeu peut ainsi demander la liste des joueurs connectés ainsi que leur adresse ip.\\
+Le problème de cette implémentation est que, à partir du moment qu'un joueur se connecte, celui-ci est ajouté à la table, mais il n'est jamais supprimé, donc il reste ainsi déconnecté indéfiniment. Pour palier à ce problème, j'ai décidé de fermer la connection de jeu après 30 minutes d'inactivité.\\
+Pour cela, la table contient un autre champ : le timestamp en secondes de la date de connection. Ainsi, lorsque le jeu demande les personnes connectés, avant de lui donner une réponse, je vais d'abord une requête SQL ayant pour but de supprimer toutes les entrées ayant un timestamp inférieur au timestamp actuel - 1800 (30 * 60). Ainsi, tous les comptes connectés depuis plus de 30 minutes sont supprimés de la table, et n'apparaissent donc pas dans la liste des joueurs connectés.
+
+\subsection{Rendu final}
+
+Lors du commencement du projet, le site web n'était alors qu'une simple vitrine, présentant le jeu, il était en quelque sorte à part du jeu. Mais au final des soutenances, de nombreuses fonctionnalités ont été ajoutés, permettant au jouer d'interagir avec le jeu, mais aussi avec d'autres joueurs. En fait le terme site web est maintenant un peu réducteur, ce dont il faut parler c'est du serveur. Notre serveur XAMPP a deux objectifs. Premièrement, il distribue le site web aux visiteurs, leur renvoyant la page web demandées, avec les informations voulues.\\
+Ensuite, notre serveur communique aussi avec le jeu, et sans cette communication, il n'y aurait pas de multijoueur, ni de classements.\\
+Ce serveur n'est pas à part du jeu, c'est une partie de notre jeu, aussi bien que la partie client, réalisée avec Unity.\\
+
+Le serveur permet aussi d'enrichir le site web, en permettant la possibilité de s'inscrire, de se connecter, de se déconnecter, mais aussi de consulter les différents scores des joueurs. Au final notre site web est assez riche et complet, et ressemble à un véritable site web d'un jeu vidéo.\\
+
+La réalisation de ce site web m'a aussi demandé pas mal d'efforts, les différences rencontrées étaient certes moins importantes que pour le jeu, mais la moindre fonctionnalité à implémenter demande beaucoup beaucoup de lignes de codes en PHP. De plus, il faut aussi paramétrer XAMP, afin que le serveur se lance correctement. Pour la base de données SQL, il faut la rendre accessible depuis PHP, ainsi que créer des tables, ce sont en quelque sorte l'équivalent de nos fichiers sur un disque dur. Les données sont stockées sous formes de tableaux. Chaque table possède une structure propre, avec différents champs, ayant un nom, un type, des fonctionnalités spéciales, chacun de ces champs correspondant à une colonne du tableau.\\
+A cela s'ajoute d'autres problèmes pour le développement des scripts PHP dédiés au jeu. Lorsque ceux-ci ne fonctionnent pas comme attendu, trouver l'erreur est bien plus compliquée, étant donné que le problème pourrait tout aussi bien venir du jeu que du serveur. Cela demande de développer à la fois en se servant d'unity, du navigateur, et d'un éditeur PHP.
 
 \section{Conclusions Personelles}
 
-\section{Conclusion}
+\subsection{Steven Lariau}
+
+Ce projet arrive à son terme, cela fait 6 mois de travail, et je réalise que beaucoup de choses sont arrivées, bien entendues dans le cadre du projet, mais aussi dans un cadre extérieur, et qui ont aussi eu une influence sur ce projet.\\
+Dans un premier temps, je réalise que j'ai appris et gagné en expérience sur le travail en équipe, après cette première expérience, je réalise déjà un peu plus ce que travailler à plusieurs sur un même projet signifie réellement. Il ne suffit pas que chacun travaille dans son coin, faisant uniquement ce qu'il veut. Il faut aussi s'organiser, se coordonner. Nous faisans tous plus au moins des parties différentes du projet, mais il ne faut pas par exemple qu'un des membre de l'équipe se retrouve bloqué par ce qu'il a besoin de la partie d'un autre membre pour pouvoir travailler. Il faut aussi éviter de faire plusieurs fois la même chose. De plus, éviter de passer trop de temps sur des fonctionnalités peu utiles et compliquées permet d'avancer plus rapidement.\\
+
+Ensuite, le but de ce projet était aussi d'améliorer ces compétences en programmation, et j'espérais notamment en apprendre bien plus sur le domaine des jeux vidéos en 3D, qui était pour moi une partie quasiment inconnue de la programmation. A ce niveau là, j'ai été assez déçu. Premièrement à cause d'Unity, certes ce moteur de jeu 3D permet de simplifier énormément la réalisation d'un jeu, en implémentant par défaut bon nombre de fonctionnalités, mais il va beaucoup trop loin, l'abstraction réalisée par Unity est tellement importante que je ne plus vraiment l'impression de programmer. Je pense notamment à la fonction Main, qui existe plus ou moins, dans une forme ou dans une autre dans presque tous les langages de programmation, mais qui n'est pas modifiable sur Unity. Je pense aussi à l'ajout de scripts à des GameObject, qui m'a toujours semblé être une fonction très étrange de procéder, surtout qu'un même objet peut avoir plusieurs scripts. C'est comme ci pour modifier le fonctionnement d'une classe, au lieu de créer une classe fille héritant de la classe voulue, en changeant certaines méthodes pour modifier le comportement, on créerait d'autres classes, qui violerait le principe d'encapsulation et modifierait le gameobject dont on veut changer le comportement.\\
+En fait, Je n'ai pas l'impression qu'Unity est outil pour les programmeurs, on peut même créer son jeu-vidéo entièrement sans taper une seule ligne de code. Le code semble être une fonctionnalité otionnelle, un gadget du framework, qui peut parfois servir. Je n'ai jamais utilité de moteur de jeu avant, alors peut-être que tous les moteurs fonctionnement de la même façon, mais en tout cas j'ai déjà utilisé plusieurs SDK avec des "frameworks colossaux", permettant un peu comme Unity de faire tout très facilement, avec un niveau d'abstraction élevé, comme Visual Studio avec .Net pour faire des programmes windows, Xcode avec Cocoa pour faire des applications OS X / iOs, Qt pour faire des programmes multiplateformes. Tous permettent de réaliser certaines parties de notre programme sans coder, avec un WYSIWYG, un peu comme Unity, mais le code reste tout de même la majeure partie du travail, et une partie indispensable. De plus, utiliser ces outils pour créer des interfaces est un choix, il est tout à fait possible de faire la même chose rien qu'avec du code, permettant un contrôle total, alors qu'avec Unity nous n'avons pas le choix, nous sommes obligés d'utiliser l'interface.\\
+J'ai donc été déçu par Unity, et j'estime ne pas vraiment avoir appris grand chose dans la réalisation d'un jeu vidéo 3d. Faire ce projet m'a donné envie d'aller voir d'autres moteurs de jeu, notamment Unreal Engine, où l'on code en C++, cela me semble indispensable d'utiliser un langage compilé, générant un code machine optimisé pour faire des jeux-vidéos en 3D.\\
+
+Néanmoins, j'ai tout de même appris pas mal de choses en programmation, notamment en C\#. Unity nous donne accès au framework .NET, je n'ai vu certes qu'une toute partie de celui-ci, il semble énorme et couvre vraiment une large étendue de domaines différents. J'ai trouvé par exemples de nombreuses fonctions pour manipuler les dates, mais aussi pour communiquer avec le serveur en HTTP, ainsi que bien d'autres fonctionnalités pour le réseau. Je pense que de ce côté là .Net est bien réalisé, il possède à la fois une interface haut niveau, permettant facilement de communiquer avec un serveur, d'envoyer et de recevoir des données, mais aussi des interfaces plus bas niveaux, qui demandent plus d'efforts de notre part, mais qui permettent au final d'avoir bien plus de contrôle sur ce que nous faisons, et grâce auxquelles nous pouvons plus ou moins tout réaliser. Nous pouvons ainsi contrôler quelle protocole utiliser, avec quelle machine communiquer, quelles données exactes nous envoyons, comment nous recevons les données, etc.\\
+
+Pour la réalisation du site web, je connaissais déjà HTML, CSS, Javascript, PHP et MySQL, mais cela ne m'as pas empêché d'acquérir de nouvelles connaissances, notamment pour la communication avec d'autres machines qu'un navigateur web. J'ai appris à ne pas seulement renvoyer des pages HTML, mais aussi du texte brut, traité par notre jeu.\\
+De plus, c'est la première fois que je fais un site web réellement achevé, complet, et avec un véritable design. En effet, par le passé, j'avais utilisé ces langages afin de réaliser de simples pages, ne possédant aucune présentation, seulement du texte.\\
+La réalisation du site web m'a semblé bien différente de celle du jeu, dans le sens où j'avais vraiment l'impression de programmer. Pour PHP et MySQL je n'ai utilisé aucun framework, je me suis contenté des fonctionnalités de bases du langage, ce qui me donne un assez gros contrôle sur ce que je fais.
+
+\newpage
+
+\section*{Conclusion}
 
 \end{document}
