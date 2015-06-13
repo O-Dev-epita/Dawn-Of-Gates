@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.4)  13 JUN 2015 10:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.4)  13 JUN 2015 10:58
 entering extended mode
 **rapport.tex
 ("C:\Users\Vic\Desktop\Rapport de Projet\rapport.tex"
@@ -797,134 +797,176 @@ File: logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: logo.jpg used on input line 306.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
  [17]
-Underfull \hbox (badness 10000) in paragraph at lines 317--320
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--327
 
  []
 
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 324.
+Package pdftex.def Info: logo.jpg used on input line 327.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
  [18]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--341
+File: logo.jpg Graphic file (type jpg)
+ <use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 327.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 330--333
 
  []
 
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 341.
-(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [19]
-File: logo.jpg Graphic file (type jpg)
- <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 354.
+Package pdftex.def Info: logo.jpg used on input line 337.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
  [20]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 346.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [21]
+File: logo.jpg Graphic file (type jpg)
+ <use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 366.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [22]
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Overfull \hbox (10.8693pt too wide) in paragraph at lines 369--370
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
+
+ []
+
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 375.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 392.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [24]
+Overfull \hbox (10.8693pt too wide) in paragraph at lines 403--404
 \OT1/cmr/m/n/12 ports de sou-te-nance, le rap-port de pro-jet, les sources ains
 i que l'executable
  []
 
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 371.
-(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
-
- []
-
-File: logo.jpg Graphic file (type jpg)
-<use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 399.
-(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [22]
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
-
- []
-
-File: logo.jpg Graphic file (type jpg)
-<use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 415.
-(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [23]
-Underfull \hbox (badness 10000) in paragraph at lines 418--421
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
-
- []
-
-File: logo.jpg Graphic file (type jpg)
-<use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 426.
-(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [24]
-Underfull \hbox (badness 10000) in paragraph at lines 431--433
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--437
-
- []
-
-File: logo.jpg Graphic file (type jpg)
-<use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 437.
+Package pdftex.def Info: logo.jpg used on input line 411.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
  [25]
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 433.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [26]
 Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 439.
-(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [26]
-File: logo.jpg Graphic file (type jpg)
- <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 453.
+Package pdftex.def Info: logo.jpg used on input line 449.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
  [27]
+Underfull \hbox (badness 10000) in paragraph at lines 452--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
 File: logo.jpg Graphic file (type jpg)
- <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 459.
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 460.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
  [28]
+Underfull \hbox (badness 10000) in paragraph at lines 465--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--471
+
+ []
+
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 471.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [29]
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
+
+ []
+
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 473.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [30]
 File: logo.jpg Graphic file (type jpg)
  <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 463.
+Package pdftex.def Info: logo.jpg used on input line 487.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [31]
+File: logo.jpg Graphic file (type jpg)
+ <use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 493.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+ [32]
+File: logo.jpg Graphic file (type jpg)
+ <use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 497.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
 
-[29]
+[33]
 File: logo.jpg Graphic file (type jpg)
  <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 467.
+Package pdftex.def Info: logo.jpg used on input line 501.
 (pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
- [30] ("C:\Users\Vic\Desktop\Rapport de Projet\rapport.aux") ) 
+ [34] ("C:\Users\Vic\Desktop\Rapport de Projet\rapport.aux") ) 
 Here is how much of TeX's memory you used:
  5031 strings out of 493921
  66564 string characters out of 3144883
- 128975 words of memory out of 3000000
+ 130975 words of memory out of 3000000
  8247 multiletter control sequences out of 15000+200000
  11204 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -934,9 +976,9 @@ Here is how much of TeX's memory you used:
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on rapport.pdf (31 pages, 382875 bytes).
+Output written on rapport.pdf (35 pages, 393396 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

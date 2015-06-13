@@ -39,23 +39,26 @@
 \contentsline {subsection}{\numberline {5.1}Le premier niveau}{18}
 \contentsline {subsection}{\numberline {5.2}Le second niveau}{18}
 \contentsline {subsection}{\numberline {5.3}Le niveau final}{18}
-\contentsline {subsubsection}{\numberline {5.3.1}Scripts d\IeC {\'e}di\IeC {\'e}s au niveau}{18}
-\contentsline {section}{\numberline {6}L'interface}{19}
-\contentsline {subsection}{\numberline {6.1}Le Menu principal}{19}
-\contentsline {subsection}{\numberline {6.2}Le Menu pause}{19}
-\contentsline {subsection}{\numberline {6.3}Le Menu multijoueur}{19}
-\contentsline {subsubsection}{\numberline {6.3.1}Connexion}{19}
-\contentsline {subsubsection}{\numberline {6.3.2}Choix de la partie}{20}
-\contentsline {section}{\numberline {7}Le Site Web}{20}
-\contentsline {subsection}{\numberline {7.1}Buts}{20}
-\contentsline {subsection}{\numberline {7.2}Base du site}{21}
-\contentsline {subsection}{\numberline {7.3}Les diff\IeC {\'e}rentes pages}{21}
-\contentsline {subsection}{\numberline {7.4}Les scores}{22}
-\contentsline {subsection}{\numberline {7.5}La partie membre}{23}
-\contentsline {subsection}{\numberline {7.6}Impl\IeC {\'e}mentation du multijoueur c\IeC {\^o}t\IeC {\'e} serveur}{23}
-\contentsline {subsection}{\numberline {7.7}Rendu final}{24}
-\contentsline {section}{\numberline {8}Conclusions Personelles}{25}
-\contentsline {subsection}{\numberline {8.1}Steven Lariau}{25}
-\contentsline {subsection}{\numberline {8.2}Victor Lafargue}{27}
-\contentsline {subsubsection}{\numberline {8.2.1}Difficult\IeC {\'e}s}{27}
-\contentsline {subsubsection}{\numberline {8.2.2}R\IeC {\'e}ussites et satisfactions}{28}
+\contentsline {subsubsection}{\numberline {5.3.1}Scripts d\IeC {\'e}di\IeC {\'e}s au niveau}{20}
+\contentsline {subsubsection}{\numberline {5.3.2}Le boss final}{21}
+\contentsline {subsection}{\numberline {5.4}Le niveau multijoueur}{21}
+\contentsline {section}{\numberline {6}Le mode multijoueur}{22}
+\contentsline {section}{\numberline {7}L'interface}{23}
+\contentsline {subsection}{\numberline {7.1}Le Menu principal}{23}
+\contentsline {subsection}{\numberline {7.2}Le Menu pause}{23}
+\contentsline {subsection}{\numberline {7.3}Le Menu multijoueur}{23}
+\contentsline {subsubsection}{\numberline {7.3.1}Connexion}{23}
+\contentsline {subsubsection}{\numberline {7.3.2}Choix de la partie}{24}
+\contentsline {section}{\numberline {8}Le Site Web}{24}
+\contentsline {subsection}{\numberline {8.1}Buts}{24}
+\contentsline {subsection}{\numberline {8.2}Base du site}{25}
+\contentsline {subsection}{\numberline {8.3}Les diff\IeC {\'e}rentes pages}{25}
+\contentsline {subsection}{\numberline {8.4}Les scores}{26}
+\contentsline {subsection}{\numberline {8.5}La partie membre}{27}
+\contentsline {subsection}{\numberline {8.6}Impl\IeC {\'e}mentation du multijoueur c\IeC {\^o}t\IeC {\'e} serveur}{27}
+\contentsline {subsection}{\numberline {8.7}Rendu final}{28}
+\contentsline {section}{\numberline {9}Conclusions Personelles}{29}
+\contentsline {subsection}{\numberline {9.1}Steven Lariau}{29}
+\contentsline {subsection}{\numberline {9.2}Victor Lafargue}{31}
+\contentsline {subsubsection}{\numberline {9.2.1}Difficult\IeC {\'e}s}{31}
+\contentsline {subsubsection}{\numberline {9.2.2}R\IeC {\'e}ussites et satisfactions}{32}
