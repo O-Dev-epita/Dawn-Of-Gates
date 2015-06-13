@@ -1,6 +1,8 @@
 \documentclass[12pt]{article}
 \usepackage[francais]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{glossaries}
+\makeglossaries
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -10,7 +12,9 @@
 \usepackage{textcomp}
 \usepackage{fancyhdr}
 \usepackage{eurosym}
-\pagestyle{fancy} 
+\pagestyle{fancy}
+
+\input{glossaire}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -20,6 +24,8 @@
 \renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
+
+\renewcommand{\glossaryname}{Glossaire}
 
 \begin{titlepage}
 	\begin{center}
@@ -45,7 +51,7 @@
 
 \section*{Remerciements}
 
-De nombreuses personnes nous ont apportés de l'aide dans la la réalisation de notre projet, sans la communité du forum d'unity pour le jeu et de stack overflow pour le c\# en général et le site nous n'aurions pu faire face à tous les problèmes rencontrés lors du développement.\\
+De \gls{computer} nombreuses personnes nous ont apportés de l'aide dans la la réalisation de notre projet, sans la communité du forum d'unity pour le jeu et de stack overflow pour le c\# en général et le site nous n'aurions pu faire face à tous les problèmes rencontrés lors du développement.\\
 Nous tenons aussi à remercier HTML5Up, le site web sur lequel nous avons été cherché le template css pour notre site web.
 
 \newpage
@@ -506,5 +512,9 @@ Je suis très content et fiers de ce que mon équipe et moi-même ont réussi à
 \newpage
 
 \section*{Conclusion}
+
+\newpage
+
+\printglossaries
 
 \end{document}
