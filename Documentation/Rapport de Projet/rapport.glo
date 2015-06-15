@@ -1,14 +1,72 @@
 \glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{css?\glossentry{css}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{CSS?\glossentry{CSS}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{shuriken?\glossentry{shuriken}|setentrycounter[]{page}\glsnumberformat}{2}
 \glossaryentry{SDK?\glossentry{SDK}|setentrycounter[]{page}\glsnumberformat}{6}
-\glossaryentry{FPS?\glossentry{FPS}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{raycast?\glossentry{raycast}|setentrycounter[]{page}\glsnumberformat}{14}
-\glossaryentry{tag?\glossentry{tag}|setentrycounter[]{page}\glsnumberformat}{14}
-\glossaryentry{shader?\glossentry{shader}|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{texture renderer?\glossentry{texture renderer}|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{box collider?\glossentry{box collider}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{slow motion?\glossentry{slow motion}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{GUI?\glossentry{GUI}|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{animator?\glossentry{animator}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{HTML?\glossentry{HTML}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{CSS?\glossentry{CSS}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{Javascript?\glossentry{Javascript}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{PHP?\glossentry{PHP}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{SQL?\glossentry{SQL}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{C++?\glossentry{C++}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{Python?\glossentry{Python}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{Java?\glossentry{Java}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{C Sharp?\glossentry{C Sharp}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{Caml?\glossentry{Caml}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{assembleur?\glossentry{assembleur}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{framerates?\glossentry{framerates}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{HTML?\glossentry{HTML}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{PHP?\glossentry{PHP}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{Java?\glossentry{Java}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{Ruby?\glossentry{Ruby}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{Python?\glossentry{Python}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{C Sharp?\glossentry{C Sharp}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{Python?\glossentry{Python}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{OpenGL?\glossentry{OpenGL}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{C Sharp?\glossentry{C Sharp}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{FPS?\glossentry{FPS}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{raycast?\glossentry{raycast}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{tag?\glossentry{tag}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{shader?\glossentry{shader}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{texture renderer?\glossentry{texture renderer}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{box collider?\glossentry{box collider}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{slow motion?\glossentry{slow motion}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{GUI?\glossentry{GUI}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{box collider?\glossentry{box collider}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{animator?\glossentry{animator}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{GameObject?\glossentry{GameObject}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{url?\glossentry{url}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{SQL?\glossentry{SQL}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{HTML?\glossentry{HTML}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{CSS?\glossentry{CSS}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{Javascript?\glossentry{Javascript}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{PHP?\glossentry{PHP}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{unserialize?\glossentry{unserialize}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{serialize?\glossentry{serialize}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{SQL?\glossentry{SQL}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{Javascript?\glossentry{Javascript}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{timestamp?\glossentry{timestamp}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{PHP?\glossentry{PHP}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{SQL?\glossentry{SQL}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{main?\glossentry{main}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{GameObject?\glossentry{GameObject}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{SDK?\glossentry{SDK}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{Cocoa?\glossentry{Cocoa}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{Qt?\glossentry{Qt}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{WYSIWYG?\glossentry{WYSIWYG}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{C++?\glossentry{C++}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{HTML?\glossentry{HTML}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{CSS?\glossentry{CSS}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{Javascript?\glossentry{Javascript}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{PHP?\glossentry{PHP}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{PHP?\glossentry{PHP}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{quaternions?\glossentry{quaternions}|setentrycounter[]{page}\glsnumberformat}{50}
+\glossaryentry{shader?\glossentry{shader}|setentrycounter[]{page}\glsnumberformat}{52}
+\glossaryentry{C Sharp?\glossentry{C Sharp}|setentrycounter[]{page}\glsnumberformat}{54}

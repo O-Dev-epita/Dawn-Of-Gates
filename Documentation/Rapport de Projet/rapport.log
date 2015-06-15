@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 JUN 2015 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 JUN 2015 12:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -923,7 +923,7 @@ e
 <logo2.png, id=1, 490.08093pt x 636.87938pt>
 File: logo2.png Graphic file (type png)
  <use logo2.png>
-Package pdftex.def Info: logo2.png used on input line 47.
+Package pdftex.def Info: logo2.png used on input line 50.
 (pdftex.def)             Requested size: 220.53438pt x 286.59306pt.
  [1
 
@@ -931,17 +931,17 @@ Package pdftex.def Info: logo2.png used on input line 47.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo2
 .png>] [1]
-Underfull \hbox (badness 10000) in paragraph at lines 65--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
@@ -965,291 +965,430 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout5 = `rapport.toc'.
 
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
-
- []
-
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
-[7] [8] [9] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 290--293
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Overfull \hbox (2.02551pt too wide) in paragraph at lines 307--309
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
+
+ []
+
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+
+ []
+
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 323--326
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 333--337
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 350--353
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Overfull \hbox (2.02551pt too wide) in paragraph at lines 367--370
 []\OT1/cmr/m/n/12 J'^^Setais en charge de la repr^^Sesentation gra-phique sur l
 '^^Secran de la barre d'^^Senergie.
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 314--317
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 375--378
 
  []
 
-[19] [20]
-Overfull \hbox (14.39891pt too wide) in paragraph at lines 330--335
+[23]
+Overfull \hbox (14.39891pt too wide) in paragraph at lines 394--399
 \OT1/cmr/m/n/12 s'ouvre au-to-ma-ti-que-ment apr^^Res quelques se-condes, per-m
 et-tant au joueur de d^^Secouvrir
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
-
- []
-
-[21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 360--362
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--372
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--372
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--372
-
- []
-
-[23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 375--379
+[25] <1.jpg, id=93, 871.34042pt x 434.13255pt>
+File: 1.jpg Graphic file (type jpg)
+ <use 1.jpg>
+Package pdftex.def Info: 1.jpg used on input line 419.
+(pdftex.def)             Requested size: 174.265pt x 86.82497pt.
+ [26 <./1.jpg>]
+<2.jpg, id=97, 515.526pt x 229.8186pt>
+File: 2.jpg Graphic file (type jpg)
+ <use 2.jpg>
+Package pdftex.def Info: 2.jpg used on input line 430.
+(pdftex.def)             Requested size: 257.76237pt x 114.90901pt.
+ [27 <./2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
-
- []
+<3.jpg, id=101, 916.8654pt x 412.9026pt>
+File: 3.jpg Graphic file (type jpg)
+ <use 3.jpg>
+Package pdftex.def Info: 3.jpg used on input line 449.
+(pdftex.def)             Requested size: 366.73965pt x 165.15811pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
-
- []
-
-
-Overfull \hbox (10.11987pt too wide) in paragraph at lines 405--406
-[]\OT1/cmr/m/n/12 J'ai d^^Sevelopp^^Se trois types d'in-tel-li-gence ar-ti-fi-c
-ielles pour les trois sou-te-nances(une
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 407--410
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Underfull \hbox (badness 10000) in paragraph at lines 457--459
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--416
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
-
- []
-
-
-Overfull \hbox (33.5294pt too wide) in paragraph at lines 421--422
-[]\OT1/cmr/m/n/12 Le mo-dule [] Na-vi-ga-tion [] joue un r^ole tr^^Res im-por-t
-ant dans la premi^^Rere probl^^Sematique,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 426--428
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 429--431
+[29 <./3.jpg>] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 468--472
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 447--449
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
 [32]
-Overfull \hbox (6.72546pt too wide) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--498
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--512
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Overfull \hbox (33.5294pt too wide) in paragraph at lines 529--530
+[]\OT1/cmr/m/n/12 Le mo-dule [] Na-vi-ga-tion [] joue un r^ole tr^^Res im-por-t
+ant dans la premi^^Rere probl^^Sematique,
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--537
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 543--545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--554
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--570
+
+ []
+
+[38]
+Overfull \hbox (6.72546pt too wide) in paragraph at lines 577--578
 []\OT1/cmr/m/n/12 L'interface de connexion au mode mul-ti-joueur de notre jeu a
  ^^Set^^Se par-ti-culi^^Rerement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
-
- []
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
-
- []
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 509--511
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-
- []
-
-
-Overfull \hbox (5.24919pt too wide) in paragraph at lines 519--520
-[]\OT1/cmr/m/n/12 Je me sers aussi de MySQL pour sto-cker les in-for-ma-tions d
-es diff^^Serents membres.
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
-
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 540--543
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 553--555
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 556--559
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 632--634
 
  []
 
-[42] [43] [44] [45] [46] [47] [48] (./rapport.gls) [49] (./rapport.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+
+ []
+
+[43]
+Overfull \hbox (5.24919pt too wide) in paragraph at lines 644--645
+[]\OT1/cmr/m/n/12 Je me sers aussi de MySQL pour sto-cker les in-for-ma-tions d
+es diff^^Serents membres.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+
+LaTeX Warning: Reference `mysql' on page 44 undefined on input line 658.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--659
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 666--670
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--682
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 683--685
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 686--688
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--691
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--701
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--706
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--718
+
+ []
+
+
+Overfull \hbox (25.16832pt too wide) in paragraph at lines 719--720
+\OT1/cmr/m/n/12 prendre le fonc-tion-ne-ment d'un jeu vid^^Seo dans sa r^^Seali
+sation et dans son d^^Seveloppement. 
+ []
+
+[51] [52] [53] [54]
+Underfull \hbox (badness 10000) in paragraph at lines 755--757
+
+ []
+
+
+Overfull \hbox (22.49196pt too wide) in paragraph at lines 758--761
+[]\OT1/cmr/m/n/12 Ce pro-jet nous a comme pr^^Sevu per-mis d'am^^Seliorer et de
+ d^^Sevelopper nos comp^^Setences
+ []
+
+[55] (./rapport.lof)
+\tf@lof=\write6
+\openout6 = `rapport.lof'.
+
+ [56] (./rapport.gls
+Overfull \hbox (6.1845pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 Language constitu^^Se d'une suc-ces-sion d'ins-truc-tion qui 
+sont conver-
+ []
+
+[57]
+Overfull \hbox (28.90315pt too wide) in paragraph at lines 81--83
+[]\OT1/cmr/m/n/12 Framework per-met-tant la r^^Sealisation d'in-ter-phaces gra-
+phiques multi-plateformes
+ []
+
+[58]) [59] (./rapport.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 []\OT1/cmr/m/n/12 Aras Pran-cke-vi-cius.  Mir-ror-re-flec-tion3.  http ://-
  []
 
 
-Overfull \hbox (13.66792pt too wide) in paragraph at lines 34--37
+Overfull \hbox (19.54286pt too wide) in paragraph at lines 74--77
 []\OT1/cmr/m/n/12 Valve.  Por-tal, Oc-tobre 2007.  http ://www.valvesoftware.co
 m/games/portal.html. 
  []
 
-) [50] (./rapport.aux) ) 
+) [60] (./rapport.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10480 strings out of 493117
- 150702 string characters out of 6135433
- 280059 words of memory out of 5000000
- 13695 multiletter control sequences out of 15000+600000
+ 11258 strings out of 493117
+ 164033 string characters out of 6135433
+ 284888 words of memory out of 5000000
+ 14466 multiletter control sequences out of 15000+600000
  11204 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,43p,1754b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy6.pfb>
-Output written on rapport.pdf (51 pages, 387894 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on rapport.pdf (61 pages, 1432611 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 228 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

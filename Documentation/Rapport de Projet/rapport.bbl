@@ -1,9 +1,39 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{blender}
+Blender Foundation.
+\newblock Blender.
+\newblock https://www.blender.org/.
+
+\bibitem{xampp}
+Apache Friends.
+\newblock Xampp - cross apache http server mysql php perl.
+\newblock https://www.apachefriends.org/fr/index.html.
 
 \bibitem{unreal}
 Epig Games.
 \newblock Unreal engine 4.
 \newblock https://www.unrealengine.com/.
+
+\bibitem{github}
+Github Inc.
+\newblock Github.
+\newblock https://github.com/.
+
+\bibitem{sdz}
+Simple IT.
+\newblock Openclassrooms (anciennement site du zero.
+\newblock http://openclassrooms.com/.
+
+\bibitem{net}
+Microsoft.
+\newblock .net 4.5.
+\newblock http://www.microsoft.com/net.
+
+\bibitem{visual}
+Microsoft.
+\newblock Visual studio 2013.
+\newblock https://www.visualstudio.com/.
 
 \bibitem{html5up}
 n33co.
@@ -24,6 +54,16 @@ Aras Pranckevicius.
 StackExchange.
 \newblock Stack overflow.
 \newblock http://stackoverflow.com/.
+
+\bibitem{unity}
+Unity Technologies.
+\newblock Unity 5 - game engine.
+\newblock https://unity3d.com/.
+
+\bibitem{tutounity}
+Unity Tecnologies.
+\newblock Unity learn.
+\newblock http://unity3d.com/learn.
 
 \bibitem{unityforum}
 Unity.
