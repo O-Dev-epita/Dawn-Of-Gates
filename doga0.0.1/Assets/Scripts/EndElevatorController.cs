@@ -1,11 +1,18 @@
 ﻿using UnityEngine;
-using System.Collections;
+
 
 public class EndElevatorController : ElevatorController {
 
+
+
 	void OnTriggerEnter(Collider other)
 	{
-		closeDoors ();
-		Invoke ("nextLevel", 2);
+        if(other.tag == "Player")
+        {
+            closeDoors();
+            GameState.Instance.levelEnd(level);
+            Invoke("nextLevel", 2);
+        }
+		
 	}
 }

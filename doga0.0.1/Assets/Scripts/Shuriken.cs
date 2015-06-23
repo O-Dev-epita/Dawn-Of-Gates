@@ -18,6 +18,7 @@ public class Shuriken : MonoBehaviour
 		RaycastHit hit;
 		if(Physics.Raycast(transform.position, transform.forward, out hit, 100f))
 		{
+            Debug.Log(hit.collider.name);
 			hasPortal = hit.collider.transform.root.tag == "room";
 			this.hit = hit;
 			distance = hit.distance;

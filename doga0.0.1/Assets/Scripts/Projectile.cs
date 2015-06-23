@@ -17,8 +17,8 @@ public class Projectile : MonoBehaviour {
 		*/
 		//Destroy (gameObject, 4);
 		//Vector3 relativePos = ninja.transform.position - transform.position;
-		
-		transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * GameState.Instance.UniversalTime);
 		
 		
 		
