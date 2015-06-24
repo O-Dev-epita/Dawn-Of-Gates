@@ -1,9 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Pause.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PostRequest.cs">
     <Files>
-      <File FileName="Assets\Scripts\Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pause.cs" Line="11" Column="34" />
+      <File FileName="Assets/Scripts/Connection.cs" Line="19" Column="3" />
+      <File FileName="Assets/Scripts/Server.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GetUsers.cs" Line="72" Column="35" />
+      <File FileName="Assets/Scripts/Multi.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ElevatorController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EndElevatorController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameState.cs" Line="60" Column="18" />
+      <File FileName="Assets/Scripts/PostRequest.cs" Line="19" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

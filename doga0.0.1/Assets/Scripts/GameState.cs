@@ -7,7 +7,11 @@ public class GameState {
 
 	private static GameState instance;
 
-	private const string SAVE_URL = "http://localhost/dog/scores/save.php";
+	private const string SAVE_URL = "scores/save.php";
+
+	public static string pseudo = "";
+	public static string serverAdress = "";
+
 
 	public static GameState Instance
 	{
@@ -52,18 +56,28 @@ public class GameState {
 	{
 		int duration = GameState.getTimestamp () - this.startTime;
 
-        try
-        {
-            string url = SAVE_URL + "?l=" + (level - 1) + "&t=" + duration;
-            WebRequest req = WebRequest.Create(url);
-            req.Method = "GET";
 
-            HttpWebResponse res = (HttpWebResponse)req.GetResponse();
-        }
-        catch
-        {
+		pseudo = "obs";
 
-        }
+		if (pseudo != "")
+		{
+
+			try
+			{
+				PostRequest req = new PostRequest(SAVE_URL);
+				req.addData("level", (level - 4).ToString());
+				req.addData("pseudo", pseudo);
+				req.addData("time", duration.ToString());
+				req.send();
+			}
+			catch
+			{
+				
+			}
+				
+		}
+
+        
 		
 	}
 	
