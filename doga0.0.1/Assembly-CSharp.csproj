@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Displacements.cs" />
      <Compile Include="Assets\Scripts\ElevatorController.cs" />
      <Compile Include="Assets\Scripts\EndElevatorController.cs" />
+     <Compile Include="Assets\Scripts\EnnemyStruct.cs" />
      <Compile Include="Assets\Scripts\Ennemygoal.cs" />
      <Compile Include="Assets\Scripts\GameState.cs" />
      <Compile Include="Assets\Scripts\GestionController.cs" />

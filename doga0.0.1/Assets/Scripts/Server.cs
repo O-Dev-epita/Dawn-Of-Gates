@@ -12,19 +12,33 @@ public class Server : MonoBehaviour
 	TcpListener listener;
 	const int PORT = 2055;
 
+	private int enemyIndex;
+
 	static int nbMessages = 0;
 
 	public Transform persoTransform;
+
 	public GameObject waitMenu;
+	public GameObject theGame;
+
+	public GameObject[] enemiesObjects;
 
 	private bool clientConnected;
 
-	public PersoStruct perso;
+	private PersoStruct perso;
+	private EnnemyStruct[] enemies;
 
 	bool[] triggers;
+
+	private bool sendEnnemy;
+	private EnnemyStruct ennemySpawn;
+
 	
 	void Start () 
 	{
+
+		enemyIndex = 0;
+		sendEnnemy = false;
 
 		clientConnected = false;
 
@@ -38,11 +52,26 @@ public class Server : MonoBehaviour
 		t.Start();
 	}
 
+	public void spawnEnnemy(Transform position)
+	{
+		if (enemyIndex != enemiesObjects.Length)
+		{
+
+			enemiesObjects[enemyIndex].transform.position = position.position;
+			enemiesObjects[enemyIndex].transform.rotation = position.rotation;
+			enemiesObjects[enemyIndex].SetActive(true);
+			ennemySpawn = new EnnemyStruct(position, enemyIndex);
+			sendEnnemy = true;
+			enemyIndex++;
+		}
+	}
+
 	public void Update()
 	{
 		if (clientConnected) 
 		{
 			waitMenu.SetActive (false);
+			theGame.SetActive(true);
 			persoTransform.position = perso.pos;
 			persoTransform.rotation = perso.rot;
 				
@@ -50,6 +79,7 @@ public class Server : MonoBehaviour
 		else 
 		{
 			waitMenu.SetActive(true);
+			theGame.SetActive(false);
 		}
 	}
 
@@ -67,12 +97,35 @@ public class Server : MonoBehaviour
 				while(true)
 				{
 
-					byte[] data = new byte[28];
-					br.Read(data, 0, 28);
+					byte type = br.ReadByte();
 
-					perso = new PersoStruct();
-					perso.tostruct(data);
+					if(type == PersoStruct.TYPE)
+					{
+						byte[] data = new byte[PersoStruct.SIZE];
+						br.Read(data, 0, PersoStruct.SIZE);
+						perso = new PersoStruct(data);
+					}
+					else if(type == EnnemyStruct.TYPE)
+					{
+						byte[] data = new byte[EnnemyStruct.SIZE];
+						br.Read(data, 0, EnnemyStruct.SIZE);
+						EnnemyStruct enemy = new EnnemyStruct(data);
+						enemies[enemy.index] = enemy;
+					}
+					else
+					{
+						Debug.Log("Something wrong happened");
+					}
+
 					clientConnected = true;
+
+					if(sendEnnemy)
+					{
+
+						bw.Write(ennemySpawn.tobyte());
+
+						sendEnnemy = false;
+					}
 
 					byte[] triggersBytes = new byte[triggers.Length];
 					for(int i = 0; i < triggersBytes.Length; i++)
