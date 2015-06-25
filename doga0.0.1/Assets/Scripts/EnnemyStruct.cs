@@ -16,18 +16,19 @@ public struct EnnemyStruct
 	
 	public byte[] tobyte()
 	{
-		byte[] result = new byte[SIZE];
-		BitConverter.GetBytes(pos.x).CopyTo(result, 0);
-		BitConverter.GetBytes(pos.y).CopyTo(result, 4);
-		BitConverter.GetBytes(pos.z).CopyTo(result, 8);
-		BitConverter.GetBytes(rot.x).CopyTo(result, 12);
-		BitConverter.GetBytes(rot.y).CopyTo(result, 16);
-		BitConverter.GetBytes(rot.z).CopyTo(result, 20);
-		BitConverter.GetBytes(rot.w).CopyTo(result, 24);
-		result [28] = animDeath ? (byte)1 : (byte)0;
-		result [29] = animWalking ? (byte)1 : (byte)0;
-		result [30] = animFight ? (byte)1 : (byte)0;
-		BitConverter.GetBytes (index).CopyTo (result, 31);
+		byte[] result = new byte[SIZE+1];
+		result [0] = TYPE;
+		BitConverter.GetBytes(pos.x).CopyTo(result, 1);
+		BitConverter.GetBytes(pos.y).CopyTo(result, 5);
+		BitConverter.GetBytes(pos.z).CopyTo(result, 9);
+		BitConverter.GetBytes(rot.x).CopyTo(result, 13);
+		BitConverter.GetBytes(rot.y).CopyTo(result, 17);
+		BitConverter.GetBytes(rot.z).CopyTo(result, 21);
+		BitConverter.GetBytes(rot.w).CopyTo(result, 25);
+		result [29] = animDeath ? (byte)1 : (byte)0;
+		result [30] = animWalking ? (byte)1 : (byte)0;
+		result [31] = animFight ? (byte)1 : (byte)0;
+		BitConverter.GetBytes (index).CopyTo (result, 32);
 		return result;
 	}
 

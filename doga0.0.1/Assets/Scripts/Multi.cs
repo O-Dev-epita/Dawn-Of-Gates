@@ -10,7 +10,19 @@ public class Multi : MonoBehaviour {
 	TcpClient client;
 	const int PORT = 2055;
 
+	private int ennemyIndex;
+
 	public GameObject[] enemiesObjects;
+
+	private TriggerStruct triggers;
+
+	private EnnemyStruct[] enemies;
+
+	private EnnemyStruct spawnEnemy;
+	private bool isSpawnEnemy;
+
+	public GameObject leftPortal;
+	public GameObject rightPortal;
 
 	public Transform cube;
 
@@ -23,21 +35,71 @@ public class Multi : MonoBehaviour {
 	void Start()
 	{
 
-		Debug.Log (GameState.serverAdress);
+		isSpawnEnemy = false;
+
+		ennemyIndex = 0;
+		enemies = new EnnemyStruct[enemiesObjects.Length];
+		triggers = new TriggerStruct (42);
 
 		client = new TcpClient(GameState.serverAdress, PORT);
 		Service();
+		Thread thread = new Thread (updateMessages);
+		thread.Start ();
+	}
+
+	void updateMessages()
+	{
+		while(true)
+		{
+
+			byte type = br.ReadByte();
+
+			if(type == EnnemyStruct.TYPE)
+			{
+				byte[] data = new byte[EnnemyStruct.SIZE];
+				br.Read(data, 0, EnnemyStruct.SIZE);
+
+				spawnEnemy = new EnnemyStruct(data);
+				isSpawnEnemy = true;
+				Debug.Log("received ennemy");
+			}
+
+			else if(type == TriggerStruct.TYPE)
+			{
+				byte[] data = new byte[TriggerStruct.SIZE];
+				br.Read(data, 0, TriggerStruct.SIZE);
+				triggers = new TriggerStruct(data);
+			}
+
+		}
 	}
 
 	void Update()
 	{
+
+		if(isSpawnEnemy)
+		{
+			enemies[ennemyIndex] = spawnEnemy;
+			enemiesObjects[ennemyIndex].transform.position = spawnEnemy.pos;
+			enemiesObjects[ennemyIndex].transform.rotation = spawnEnemy.rot;
+			enemiesObjects[ennemyIndex].SetActive(true);
+			ennemyIndex++;
+			isSpawnEnemy = false;
+		}
+
 		perso.pos = cube.transform.position;
 		perso.rot = cube.transform.rotation;
-		bw.Write (PersoStruct.TYPE);
 		bw.Write(perso.tobyte());
-		byte[] received = new byte[10];
-		br.Read(received, 0, 10);
-		UpdateTriggers(received);
+
+		bw.Write (new PortalStruct (leftPortal.transform, GameState.Instance.leftPortalOpen).tobyte(PortalStruct.TYPE_LEFT));
+		bw.Write (new PortalStruct (rightPortal.transform, GameState.Instance.rightPortalOpen).tobyte(PortalStruct.TYPE_RIGHT));
+
+		for(int i = 0; i < ennemyIndex; i++)
+		{
+			bw.Write( new EnnemyStruct(enemiesObjects[i].transform, i).tobyte());
+		}
+
+
 	}
 
 	void Service()
@@ -49,12 +111,17 @@ public class Multi : MonoBehaviour {
 
 		perso = new PersoStruct();
 
-		Debug.Log("Connected to port " + PORT);
+		Debug.Log("Connected to " + GameState.serverAdress + ":" + PORT);
 
 	}
 
-	void UpdateTriggers(byte[] received)
+	void OnApplicationQuit()
 	{
-
+		endScene ();
+	}
+	
+	private void endScene()
+	{
+		bw.Write (Server.NINJA_DIE);	
 	}
 }
