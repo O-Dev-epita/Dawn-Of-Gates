@@ -6,8 +6,10 @@ using System;
 public class Connection : MonoBehaviour {
 
 	public Text pseudoText;
-	public Text passwordText;
+	public InputField passwordText;
 	public GetUsers script;
+
+	public Toggle ninjaToggle;
 
 	public void OnClick() {
 		
@@ -19,15 +21,31 @@ public class Connection : MonoBehaviour {
 		PostRequest req = new PostRequest(url);
 		req.addData("pseudo", user);
 		req.addData("pass", password);
-		req.addData("game", "1");
+
+		if (ninjaToggle.isOn) 
+		{
+			req.addData("game", "1");
+		}
+		else
+		{
+			req.addData("game", "2");
+		}
+
 		if(req.send())
 		{
 			int id = Convert.ToInt32(req.getResponseBody());
 			if(id != -1)
 			{
 				Debug.Log("Connection succeful : " + id);
-				script.Init(user);
+
 				GameState.pseudo = user;
+
+				if(!ninjaToggle.isOn)
+				{
+					Application.LoadLevel("multimdl");
+				}
+
+				script.Init(user);
 			}
 			else
 			{

@@ -46,6 +46,8 @@ public class GetUsers : MonoBehaviour {
 			return;
 		}
 
+		usersList = Connect(GameState.pseudo).Split(';');
+
 		GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), background);
 
 		for(int i=0; i < usersList.Length/2; i++)
